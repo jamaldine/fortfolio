@@ -1,0 +1,13 @@
+// here we will create our major fonts styles
+// roboto regular
+.roboto_regular_base{
+    font-family: 'Roboto_Regular';
+    color: $white;
+}
+
+.mx-11{
+    @extend .roboto_regular_base;
+    font-size: 26px;
+}
+
+
