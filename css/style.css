@@ -19,8 +19,10 @@ html,body{
 /* ---- navbar wraper ---- */
 .navbar_wraper{
   position: absolute;
-  width: 100%;
   top: 20px;
+  margin-top: -20px;
+  height: 100px;
+  width: 100%;
 }
 /* ---- index section ---- */
 .index-section{

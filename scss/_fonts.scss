@@ -2,15 +2,20 @@
 
 @font-face {
     font-family: 'Roboto_Regular';
-    src: url('/fonts/Roboto-Regular.ttf') format('truetype');
+    src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Roboto_Medium';
-    src: url('/fonts/Roboto-Medium.ttf') format('trueType');
+    src: url('../fonts/Roboto/Roboto-Medium.ttf') format('trueType');
 }
 
 @font-face {
     font-family: 'Roboto_Bold';
-    src: url('/fonts/Roboto-Bold.ttf') format('truetype');
+    src: url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat_Regular';
+    src: url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
 }
