@@ -25,11 +25,17 @@ html,body{
   width: 100%;
 }
 /* ---- index section ---- */
-.index-section{
+.home-wrapper{
   position: absolute;
-  top: 160px;
+  top: 220px;
+  left: 140px;
   width: 100%;
   color: #FFF;
+  background-image: url("../img/2.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 30% 50%;
+  fill: red;
 }
 /* ---- footer wraper ---- */
 .footer_wraper{
