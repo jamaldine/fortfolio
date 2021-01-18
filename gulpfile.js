@@ -43,6 +43,10 @@ function copyCommon(){
   return src('common/*.html').pipe(gulp.dest('dist/common'));
 }
 
+function copyFonts(){
+  return src('fonts/**/*').pipe(gulp.dest('dist/fonts'));
+}
+
 function scssTask(){
   return gulp.src('scss/mainStyles.scss')
     .pipe(sass())
@@ -103,10 +107,11 @@ exports.appTask = appTask;
 exports.imgTask = imgTask;
 exports.copyHtml = copyHtml;
 exports.copyCommon = copyCommon;
+exports.copyFonts = copyFonts;
 
-//exports.default = series(parallel(copyHtml, copyCommon, imgTask,jqueryTask, particlesTask, appTask, jsTask, cssTask, scssTask), watchTask);
+//exports.default = series(parallel(copyHtml, copyCommon, copyFonts, imgTask,jqueryTask, particlesTask, appTask, jsTask, cssTask, scssTask), watchTask);
 
-gulp.task('serve', gulp.series(parallel(copyHtml, copyCommon, imgTask,jqueryTask, particlesTask, appTask, jsTask, cssTask, scssTask),  function () {
+gulp.task('serve', gulp.series(parallel(copyHtml, copyFonts, copyCommon, imgTask,jqueryTask, particlesTask, appTask, jsTask, cssTask, scssTask),  function () {
     // Static server & Autoreload
     plugins.browserSync.init({
         port: 3010,
