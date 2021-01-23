@@ -1,37 +1,80 @@
 .index-section{
     @extend .roboto_regular_base;
+    color: white;
+    position: relative;
+    
     .my-name{
         font-size: 48px;
+        margin-left: 140px;
     }
     .who-am-i{
         font-size: 30px;
         margin-top: 75px;
+        margin-left: 140px;
     }
     .skills{
         font-size: 15px;
         list-style: none;
         padding-inline-start: 0;   
+        margin-left: 140px;
         .skill-item{
-            margin-bottom: 8px;
+            margin-bottom: 15px;
+            .skill-item-name {
+                display: flex;
+                .circular-chart {
+                    width: 35px;
+                }
+                .circular-chart.orange{
+                      .circle {
+                        stroke: #fdfdfd;
+                        fill: none;
+                        stroke-width: 2.8;
+                        stroke-linecap: round;
+                        animation: progress 1s ease-out forwards;
+                      }
+                      @keyframes progress {
+                        0% {
+                          stroke-dasharray: 0 100;
+                        }
+                      }
+                      .percentage {
+                        fill: rgb(255, 255, 255);
+                        font-family: sans-serif;
+                        font-size: 0.5em;
+                        text-anchor: middle;
+                      }
+                }
+                .skill-item-name-txt{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 12px;
+                    font-size: 12px;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                }
+            }
         } 
     }
     .about-cta{
-        margin-top: 100px;
+        margin-left: 140px;
         font-size: 20px;
         width: 120px;
         height: 40px;
         border: 1px solid;
-        background: white;
+        background: black;
         text-align: center;
         position: relative;
         .learn-more{
-            color: black;
+            color: white;
             margin-left: auto;
             margin-right: auto;
             text-decoration: none;
             position: absolute;
-            top: 7px;
-            left: 7px;
+            top: 12px;
+            left: 9px;
+            font-size: 13px;
+            letter-spacing: 0.3em;
         }
     }
 }
