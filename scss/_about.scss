@@ -1,0 +1,90 @@
+.about-wrapper{
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    color: #FFF;
+    /* background-image: url(../img/2.png); */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 30% 50%;
+    display: flex;
+    flex-direction: column;
+    .about{
+        display: flex;
+        flex-direction: row;
+        .about-img{
+            flex: 1;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .img-portfolio{
+                width: 350px;
+                height: 100%;
+            }
+        }
+        .about-content{
+            flex: 1;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            font-family: 'Montserrat_Regular';
+            .about-container{
+                max-width: 400px;
+                .about-paragraphe{
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    .about-title{
+                        font-size: 14px;
+                        letter-spacing: 0.3em;
+                        font-style: normal;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        text-shadow: 4px 4px 5px #d6d6d6;
+                        line-height: 1.6;
+                        word-spacing: 4px;
+                    }
+                    .description{
+                        font-size: 13px;
+                        margin-top: 10px;
+                        letter-spacing: 0.1em;
+                        line-height: 19px;
+                    }
+                }
+            }
+        }
+    }
+    .medias{
+        height: 200px;
+        margin: 10px 400px 0;
+        .medias-content{
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            .items{
+                height: 100%;
+                width: 145px;
+                img{
+                height: 100%;
+                width: 100%;
+                opacity: 0.8;
+                &:hover{
+                    transform: scaleX(-1);
+                }
+            }
+            }
+            
+        }
+    }
+}
+
+.slick-slide{
+    margin:10px;
+  }
+  .slick-slide img{
+    width:100%;
+    border: 2px solid #fff;
+  }

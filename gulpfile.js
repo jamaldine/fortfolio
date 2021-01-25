@@ -66,6 +66,20 @@ function jqueryTask(){
   // to minify later
   return src('js/jquery.js').pipe(gulp.dest('dist/js'));
 }
+function slickTask(){
+  // to minify later
+  return src('js/slick.min.js').pipe(gulp.dest('dist/js'));
+}
+
+function navbarTask(){
+  // to minify later
+  return src('js/navbar.js').pipe(gulp.dest('dist/js'));
+}
+
+function carouselTask(){
+  // to minify later
+  return src('js/slick.js').pipe(gulp.dest('dist/js'));
+}
 
 function appTask(){
     return src('js/**/app.js')
@@ -96,12 +110,15 @@ function cssTask(){
 
 
 function watchTask(){
-    watch([cssPath, jsPath], {interval: 1000}, parallel(cssTask, scssTask, jqueryTask, particlesTask, appTask,jsTask));
+    watch([cssPath, jsPath], {interval: 1000}, parallel(cssTask, scssTask, slickTask, jqueryTask, particlesTask, appTask,jsTask, navbarTask, carouselTask));
 }
 exports.cssTask = cssTask;
 exports.scssTask = scssTask;
 exports.jsTask = jsTask;
 exports.jqueryTask = jqueryTask;
+exports.slickTask = slickTask;
+exports.navbarTask = navbarTask;
+exports.carouselTask = carouselTask;
 exports.particlesTask = particlesTask;
 exports.appTask = appTask;
 exports.imgTask = imgTask;
@@ -109,9 +126,8 @@ exports.copyHtml = copyHtml;
 exports.copyCommon = copyCommon;
 exports.copyFonts = copyFonts;
 
-//exports.default = series(parallel(copyHtml, copyCommon, copyFonts, imgTask,jqueryTask, particlesTask, appTask, jsTask, cssTask, scssTask), watchTask);
 
-gulp.task('serve', gulp.series(parallel(copyHtml, copyFonts, copyCommon, imgTask,jqueryTask, particlesTask, appTask, jsTask, cssTask, scssTask),  function () {
+gulp.task('serve', gulp.series(parallel(copyHtml, copyFonts, copyCommon, imgTask, jqueryTask, slickTask, navbarTask, carouselTask, particlesTask, appTask, jsTask, cssTask, scssTask),  function () {
     // Static server & Autoreload
     plugins.browserSync.init({
         port: 3010,
