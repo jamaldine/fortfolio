@@ -1,4 +1,4 @@
-.narbar-component{
+.navbar-component{
     position: relative;
     height: 100%;
     div.logo{
@@ -44,6 +44,7 @@
                 font-size: 17px;
                 text-decoration: none;
                 &:hover{
+                    cursor: pointer;
                     animation-name: nav;
                     animation-duration: 1000ms; 
                     animation-iteration-count: 1;
