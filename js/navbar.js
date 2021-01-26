@@ -30,6 +30,8 @@ function changeContent(navlink){
     }
     if (navlink.classList.contains('about'))  {
         $('#root').load('../common/about-section.html');
+        // I should add a loader instead of load about-section, then appear it. Or I add a d-none class before 50s.
+        setTimeout(function() {slickCarousel()} ,50);
     }
     if (navlink.classList.contains('work')) {
         $('#root').load('../common/work-section.html');
@@ -40,4 +42,13 @@ function changeContent(navlink){
     if (navlink.classList.contains('contact')) {
         $('#root').load('../common/contact-section.html');
     }
+}
+
+function slickCarousel(){
+    console.log('here we are again !');
+    $('.medias-content').slick({
+        slidesToShow: 3,
+        dots:true,
+        centerMode: true,
+    })
 }
