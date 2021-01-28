@@ -30,8 +30,13 @@ function changeContent(navlink){
     }
     if (navlink.classList.contains('about'))  {
         $('#root').load('../common/about-section.html');
-        // I should add a loader instead of load about-section, then appear it. Or I add a d-none class before 50s.
-        setTimeout(function() {slickCarousel()} ,50);
+        setTimeout(function() {
+            const medias = document.querySelector('.medias');
+            medias.classList.add('d-none');
+            medias.classList.remove('d-none');
+            slickCarousel();
+            control();
+        } ,50);
     }
     if (navlink.classList.contains('work')) {
         $('#root').load('../common/work-section.html');
@@ -45,10 +50,22 @@ function changeContent(navlink){
 }
 
 function slickCarousel(){
-    console.log('here we are again !');
     $('.medias-content').slick({
         slidesToShow: 3,
         dots:true,
         centerMode: true,
-    })
+    });
+}
+
+function control(){
+    //change text of prev and next btn
+    var prev = document.querySelector('.slick-prev');
+    var next = document.querySelector('.slick-next');
+
+    prev.textContent="";
+    prev.innerHTML='<i class="fa fa-chevron-left"></i>';
+
+    next.textContent="";
+    next.innerHTML='<i class="fa fa-chevron-right"></i>';
+
 }
