@@ -10,10 +10,10 @@
                 "percent": "90",
                 "skillsItem":  [
                     {
-                        "name": "XML"
+                        "name": "HTML"
                     },
                     {
-                        "name": "JSON"
+                        "name": "TWIG"
                     }
                 ]
             },
@@ -28,16 +28,16 @@
                     {
                         "name": "CSS GRID"
                     }
-                ],
-                "singleSkills":
-                [
-                    {
-                        "name": "BOOTSTRAP"
-                    },
-                    {
-                        "name": "SVG"
-                    }
                 ]
+            }
+        ],
+        "singleSkills":
+        [
+            {
+                "name": "BOOTSTRAP"
+            },
+            {
+                "name": "SVG"
             }
         ]
     }      

@@ -76,10 +76,7 @@ function navbarTask(){
   return src('js/navbar.js').pipe(gulp.dest('dist/js'));
 }
 
-function homeSectionTask(){
-  // to minify later
-  return src('js/homeSection.js').pipe(gulp.dest('dist/js'));
-}
+
 
 function jsonTask(){
   // to minify later
@@ -120,7 +117,7 @@ function cssTask(){
 
 
 function watchTask(){
-    watch([cssPath, jsPath], {interval: 1000}, parallel(cssTask, scssTask, slickTask, jqueryTask, particlesTask, appTask,jsTask, navbarTask, homeSectionTask, jsonTask, dataTask));
+    watch([cssPath, jsPath], {interval: 1000}, parallel(cssTask, scssTask, slickTask, jqueryTask, particlesTask, appTask,jsTask, navbarTask, jsonTask, dataTask));
 }
 exports.cssTask = cssTask;
 exports.scssTask = scssTask;
@@ -128,7 +125,6 @@ exports.jsTask = jsTask;
 exports.jqueryTask = jqueryTask;
 exports.slickTask = slickTask;
 exports.navbarTask = navbarTask;
-exports.homeSectionTask = homeSectionTask;
 exports.jsonTask = jsonTask;
 exports.dataTask = dataTask;
 exports.particlesTask = particlesTask;
@@ -139,7 +135,7 @@ exports.copyCommon = copyCommon;
 exports.copyFonts = copyFonts;
 
 
-gulp.task('serve', gulp.series(parallel(copyHtml, copyFonts, copyCommon, imgTask, jqueryTask, slickTask, navbarTask, homeSectionTask, jsonTask, dataTask, particlesTask, appTask, jsTask, cssTask, scssTask),  function () {
+gulp.task('serve', gulp.series(parallel(copyHtml, copyFonts, copyCommon, imgTask, jqueryTask, slickTask, navbarTask, jsonTask, dataTask, particlesTask, appTask, jsTask, cssTask, scssTask),  function () {
     // Static server & Autoreload
     plugins.browserSync.init({
         port: 3010,
