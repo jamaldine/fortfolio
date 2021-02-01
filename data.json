@@ -1,0 +1,44 @@
+{
+    "webIntegrator":
+    {
+        "name":"Web integrator",
+        "skills": 
+        [
+            {
+                "img":"./img/download.jpeg",
+                "name": "HTML 5",
+                "percent": "90",
+                "skillsItem":  [
+                    {
+                        "name": "XML"
+                    },
+                    {
+                        "name": "JSON"
+                    }
+                ]
+            },
+            {
+                "img":"./img/images.jpeg",
+                "name": "CSS 3",
+                "percent": "90",
+                "skillsItem":  [
+                    {
+                        "name": "FLEX BOX"
+                    },
+                    {
+                        "name": "CSS GRID"
+                    }
+                ],
+                "singleSkills":
+                [
+                    {
+                        "name": "BOOTSTRAP"
+                    },
+                    {
+                        "name": "SVG"
+                    }
+                ]
+            }
+        ]
+    }      
+ }
