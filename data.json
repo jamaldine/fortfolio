@@ -5,40 +5,128 @@
         "skills": 
         [
             {
-                "img":"./img/download.jpeg",
-                "name": "HTML 5",
-                "percent": "90",
-                "skillsItem":  [
+                "type":"groupe-skills",
+                "list":[
                     {
-                        "name": "HTML"
-                    },
-                    {
-                        "name": "TWIG"
+                        "img":"fa fa-jsfiddle",
+                        "name": "JAVASCRIPT",
+                        "percent": "100",
+                        "skillsItem":  [
+                            {
+                                "name": "GOOGLE MAPS API V3"
+                            },
+                            {
+                                "name": "JQUERY"
+                            },
+                            {
+                                "name":"AJAX"
+                            },
+                            {
+                                "name":"particles.js"
+                            },
+                            {
+                                "name":"chart.js"
+                            },
+                            {
+                                "name":"require.js"
+                            },
+                            {
+                                "name":"knockout.js"
+                            },
+                            {
+                                "name":"quagga.js"
+                            },
+                            {
+                                "name":"fullpage.js"
+                            }
+                        ]
                     }
                 ]
             },
             {
-                "img":"./img/images.jpeg",
-                "name": "CSS 3",
-                "percent": "90",
-                "skillsItem":  [
+                "type":"single-skills",
+                "list":[
                     {
-                        "name": "FLEX BOX"
+                        "name": "BOOTSTRAP"
                     },
                     {
-                        "name": "CSS GRID"
+                        "name": "gulp"
+                    },
+                    {
+                        "name": "WordPress"
+                    },
+                    {
+                        "name": "Slick"
+                    },
+                    {
+                        "name": "icons"
                     }
                 ]
-            }
-        ],
-        "singleSkills":
-        [
-            {
-                "name": "BOOTSTRAP"
             },
             {
-                "name": "SVG"
+                "type":"groupe-skills",
+                "list":[
+                    {
+                        "img":"fa fa-html5",
+                        "name": "HTML 5",
+                        "percent": "100",
+                        "skillsItem":  [
+                            {
+                                "name": "HTML structure"
+                            },
+                            {
+                                "name": "Twig"
+                            },
+                            {
+                                "name": "json"
+                            },
+                            {
+                                "name": "xml"
+                            },
+                            {
+                                "name": "Debugging extensions"
+                            },
+                            {
+                                "name": "browsers"
+                            }
+                        ]
+                    },
+                    {
+                        "img":"fa fa-css3",
+                        "name": "CSS 3",
+                        "percent": "100",
+                        "skillsItem":  [
+                            {
+                                "name": "FLEXBOX"
+                            },
+                            {
+                                "name": "CSS GRID"
+                            },
+                            {
+                                "name": "Responsive Design"
+                            },
+                            {
+                                "name": "Medias Querries"
+                            },
+                            {
+                                "name": "Animations"
+                            },
+                            {
+                                "name": "Pixel Perfect"
+                            },
+                            {
+                                "name": "Fonts"
+                            },
+                            {
+                                "name": "SVG"
+                            },
+                            {
+                                "name": "CSS preprocessors SASS"
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     }      
- }
+}

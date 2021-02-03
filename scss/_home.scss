@@ -4,10 +4,10 @@
     top: 120px;
     width: 100%;
     color: #FFF;
-    /*background-image: url("../img/2.png");*/
-    background-position: top;
+    background-image: url("../img/15-21.jpg");
     background-repeat: no-repeat;
-    background-size: 30% 50%;
+    background-size: cover;
+    background-position: 100% 30%;
     .home-section{
         @extend .roboto_regular_base;
         color: white;
@@ -95,9 +95,10 @@
         .home-right{
             width: 100%;
             margin-right: 140px;
-            box-shadow: 0px 0px 21px 2px rgba(255,255,255,1);
+            box-shadow: -1px -1px 0px 0px lightgrey;
             width: 100%;
             position: relative;
+            border-top-right-radius: 4%;
             &::before{
                 content: "";
                 width: 100%;
@@ -107,10 +108,113 @@
                 position: absolute;
                 top: 0;
                 left: 0;
+                border-top-right-radius: 4%;
             }
-            // to paste into scss/about-articles/_home-skills.scss
+            /* skills */
             .home-skills{
-                 
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                .skill-title{
+                    margin-left: 28px;
+                    font-family: Poppins;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 27px;
+                    color: #3A517D;
+                }
+                .skills-list{
+                    border-radius: 5%;
+                    margin: 0 15px 0 15px;
+                    .circle-skill {
+                        display: flex;
+                        .circle {
+                            height: 90px;
+                            width: 117px;
+                            border-radius: 50%;
+                            border: 1px solid rgba(255, 255, 255, 0.4);
+                            position: relative;
+                            align-self: center;
+                            .circle-img {
+                                position: absolute;
+                                height: 100%;
+                                width: 100%;
+                                border-radius: 50%;
+                            }
+                        }
+                        .skill {
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            margin-left: 13px;
+                            .name-percent {
+                                display: flex;
+                                flex-direction: row;
+                                .name {
+                                    flex: 1;
+                                    font-family: Plaster;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 18px;
+                                    line-height: 22px;
+                                    color: #000000;
+
+                                }
+                                .percent {
+                                    flex: 1;
+                                }
+                            }
+                            .breadcrumb {
+                                padding: 10px 16px;
+                                list-style: none;
+                                background-color: rgba(255,255,255,0.4);
+                                border-radius: 12px;
+                                .breadcrumb-item {
+                                    display: inline;
+                                    font-family: Poppins;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 9px;
+                                    line-height: 13px;
+                                    color: #000000;
+                                    &::after {
+                                        padding: 8px;
+                                        color: black;
+                                        content: "-";
+                                    }
+                                    .breadcrumb-name {
+                                        color: #000000;
+                                        text-decoration: none;
+                                        text-transform: lowercase;
+                                        
+                                        &:hover {
+                                            color: #01447e;
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .single-item{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    .single-name{
+                        font-family: Play;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 10px;
+                        line-height: 12px;
+                        color: #000000;
+                        border-radius: 30px;
+                        margin: 13px;
+                        padding: 9px;
+                    }
+                }
             }
         }
     }
