@@ -8,3 +8,9 @@
         color: rgb(141, 146, 146);
     }
 }
+
+@keyframes shadow {
+    100% {
+        box-shadow: 0 -1px 0px 0px lightgrey;
+    }
+  }

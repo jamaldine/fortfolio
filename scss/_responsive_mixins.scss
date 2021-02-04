@@ -20,3 +20,13 @@
         @content;
     }
 }
+
+@mixin home_shadow() {
+    animation-name: shadow;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}

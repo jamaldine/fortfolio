@@ -4,117 +4,139 @@
     top: 120px;
     width: 100%;
     color: #FFF;
-    background-image: url("../img/15-21.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100% 30%;
+    height: 83%;
     .home-section{
+        height: 100%;
         @extend .roboto_regular_base;
         color: white;
         position: relative;
         display: flex;
         flex-direction: row;
         .home-left{
+            height: 100%;
+            flex: 1;
             width: 100%;
-            .my-name{
-                font-size: 48px;
-                margin-left: 140px;
-            }
-            .who-am-i{
-                font-size: 30px;
-                margin-top: 45px;
-                margin-left: 140px;
-            }
-            .skills{
-                font-size: 15px;
-                list-style: none;
-                padding-inline-start: 0;   
-                margin-left: 140px;
-                .skill-item{
-                    margin-bottom: 15px;
-                    .skill-item-name {
-                        display: flex;
-                        .circular-chart {
-                            width: 35px;
-                        }
-                        .circular-chart.orange{
-                            .circle {
-                                stroke: #fdfdfd;
-                                fill: none;
-                                stroke-width: 2.8;
-                                stroke-linecap: round;
-                                animation: progress 1s ease-out forwards;
+            background-image: url("../img/15-21.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 100% 30%;
+            position: relative;
+            box-shadow: inset 0px -120px 0px 0px rgba(0, 0, 0 , 0.2);
+            .all{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                &::before{
+                    content: "";
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    background-color: white;
+                    opacity: 0.3;
+                }
+                .my-name{
+                }
+                .who-am-i{
+                    font-family: monospace;
+                }
+                .skills{
+                    list-style: none;
+                    padding-inline-start: 0;   
+                    display: flex;
+                    flex-wrap: wrap;
+                    .skill-item{
+                        margin-left: 30px;
+                        .skill-item-name {
+                            display: flex;
+                            .circular-chart {
+                                width: 15px;
                             }
-                            @keyframes progress {
-                                0% {
-                                stroke-dasharray: 0 100;
+                            .circular-chart.orange{
+                                .circle {
+                                    stroke: #fdfdfd;
+                                    fill: black;
+                                    stroke-width: 2.8;
+                                    stroke-linecap: round;
+                                    animation: progress 1s ease-out forwards;
+                                }
+                                .active{
+                                    stroke: black !important;
+                                    fill: white;
+                                }
+                                @keyframes progress {
+                                    0% {
+                                    stroke-dasharray: 0 100;
+                                    }
+                                }
+                                .percentage {
+                                    fill: rgb(255, 255, 255);
+                                    font-family: sans-serif;
+                                    font-size: 0.5em;
+                                    text-anchor: middle;
                                 }
                             }
-                            .percentage {
-                                fill: rgb(255, 255, 255);
-                                font-family: sans-serif;
-                                font-size: 0.5em;
-                                text-anchor: middle;
+                            .skill-item-name-txt{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                letter-spacing: 0.1em;
+                                text-transform: uppercase;
+                                font-size: 8px;
+                                margin-left: 5px;
                             }
                         }
-                        .skill-item-name-txt{
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            margin-left: 12px;
-                            font-size: 12px;
-                            letter-spacing: 0.1em;
-                            text-transform: uppercase;
-                        }
-                    }
-                } 
-            }
-            .about-cta{
-                margin-left: 140px;
-                font-size: 20px;
-                width: 120px;
-                height: 40px;
-                border: 1px solid;
-                background: black;
-                text-align: center;
-                position: relative;
-                cursor: pointer;
-                .learn-more{
-                    color: white;
-                    margin-left: auto;
-                    margin-right: auto;
-                    text-decoration: none;
-                    position: absolute;
-                    top: 12px;
-                    left: 9px;
-                    font-size: 13px;
-                    letter-spacing: 0.3em;
+                    } 
                 }
+                .about-cta{
+                    margin-left: 140px;
+                    font-size: 20px;
+                    width: 120px;
+                    height: 40px;
+                    border: 1px solid;
+                    background: black;
+                    text-align: center;
+                    position: relative;
+                    cursor: pointer;
+                    .learn-more{
+                        color: white;
+                        margin-left: auto;
+                        margin-right: auto;
+                        text-decoration: none;
+                        position: absolute;
+                        top: 12px;
+                        left: 9px;
+                        font-size: 13px;
+                        letter-spacing: 0.3em;
+                    }
+                }
+            }
+            &:hover{
+                @include home_shadow;
             }
         }
         .home-right{
-            width: 100%;
-            margin-right: 140px;
-            box-shadow: -1px -1px 0px 0px lightgrey;
+            flex: 1;
             width: 100%;
             position: relative;
-            border-top-right-radius: 4%;
+            height: 100%;
             &::before{
                 content: "";
                 width: 100%;
                 height: 100%;
-                background-color: rgb(78, 78, 75);
-                opacity: 0.5;
                 position: absolute;
                 top: 0;
                 left: 0;
-                border-top-right-radius: 4%;
+            }
+            &:hover{
+                @include home_shadow();
             }
             /* skills */
             .home-skills{
                 height: 100%;
                 display: flex;
                 flex-direction: column;
+                justify-content: space-around;
                 .skill-title{
                     margin-left: 28px;
                     font-family: Poppins;
@@ -123,6 +145,13 @@
                     font-size: 18px;
                     line-height: 27px;
                     color: #3A517D;
+                    border: 1px solid white;
+                    width: max-content;
+                    padding: 7px;
+                    border-left: none;
+                    border-top-right-radius: 17px;
+                    box-shadow: -1px -1px 0px 0px white;
+                    border-bottom: 1px solid rgba(255,255,255, 0.3);
                 }
                 .skills-list{
                     border-radius: 5%;
@@ -136,11 +165,20 @@
                             border: 1px solid rgba(255, 255, 255, 0.4);
                             position: relative;
                             align-self: center;
+                            background-color: black;
                             .circle-img {
                                 position: absolute;
                                 height: 100%;
                                 width: 100%;
                                 border-radius: 50%;
+                            }
+                            .fa{
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%,-50%);
+                                font-size: 60px;
+                                color: white;
                             }
                         }
                         .skill {
@@ -151,6 +189,7 @@
                             .name-percent {
                                 display: flex;
                                 flex-direction: row;
+                                margin-bottom: 10px;
                                 .name {
                                     flex: 1;
                                     font-family: Plaster;
@@ -158,7 +197,7 @@
                                     font-weight: normal;
                                     font-size: 18px;
                                     line-height: 22px;
-                                    color: #000000;
+                                    color: white;
 
                                 }
                                 .percent {
@@ -168,23 +207,25 @@
                             .breadcrumb {
                                 padding: 10px 16px;
                                 list-style: none;
-                                background-color: rgba(255,255,255,0.4);
+                                background-color: black;
                                 border-radius: 12px;
+                                margin: 0 15px 0 15px;
+                                border: 1px solid white;
                                 .breadcrumb-item {
                                     display: inline;
                                     font-family: Poppins;
                                     font-style: normal;
                                     font-weight: normal;
-                                    font-size: 9px;
+                                    font-size: 19px;
                                     line-height: 13px;
                                     color: #000000;
                                     &::after {
                                         padding: 8px;
-                                        color: black;
+                                        color: white;
                                         content: "-";
                                     }
                                     .breadcrumb-name {
-                                        color: #000000;
+                                        color: white;
                                         text-decoration: none;
                                         text-transform: lowercase;
                                         
