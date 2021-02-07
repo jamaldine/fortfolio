@@ -21,7 +21,7 @@
             background-size: cover;
             background-position: 100% 30%;
             position: relative;
-            box-shadow: inset 0px -120px 0px 0px rgba(0, 0, 0 , 0.2);
+            box-shadow: inset 0px 700px 0px 0px rgba(0, 0, 0 , 0.2);
             .all{
                 position: absolute;
                 bottom: 0;
@@ -36,6 +36,7 @@
                     opacity: 0.3;
                 }
                 .my-name{
+                    font-size: 1.3em;
                 }
                 .who-am-i{
                     font-family: monospace;
@@ -138,14 +139,12 @@
                 flex-direction: column;
                 justify-content: space-around;
                 .skill-title{
-                    margin-left: 28px;
+                    
                     font-family: Poppins;
                     font-style: normal;
                     font-weight: bold;
                     font-size: 18px;
                     line-height: 27px;
-                    color: #3A517D;
-                    border: 1px solid white;
                     width: max-content;
                     padding: 7px;
                     border-left: none;
@@ -250,7 +249,7 @@
                         font-weight: normal;
                         font-size: 10px;
                         line-height: 12px;
-                        color: #000000;
+                        color: white;
                         border-radius: 30px;
                         margin: 13px;
                         padding: 9px;
