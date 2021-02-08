@@ -38,7 +38,7 @@ $(document).ready(function() {
                     const schema7 = '<div class="single-item"></div>';
                     $(schema7).appendTo('.home-skills');
                     $.each(skill.list, function(j, item) {
-                        const schema6 = `<div class="single-item-${j}"></div>`;
+                        const schema6 = `<div class="single single-item-${j}"></div>`;
                         $(schema6).appendTo('.single-item');
                         const schema4 = '<div class="single-name">' + item.name + '</div>';
                         $(schema4).appendTo(`.single-item-${j}`);

@@ -140,21 +140,23 @@
                 justify-content: space-around;
                 .skill-title{
                     
-                    font-family: Poppins;
+                    font-family: cursive;
                     font-style: normal;
                     font-weight: bold;
                     font-size: 18px;
-                    line-height: 27px;
                     width: max-content;
                     padding: 7px;
-                    border-left: none;
-                    border-top-right-radius: 17px;
-                    box-shadow: -1px -1px 0px 0px white;
-                    border-bottom: 1px solid rgba(255,255,255, 0.3);
+                    letter-spacing: 8px;
+                    
                 }
                 .skills-list{
-                    border-radius: 5%;
+                    border-radius: 20px;
                     margin: 0 15px 0 15px;
+                    border-radius: 20px;
+                    margin: 0 15px 0 15px;
+                    border-color: white;
+                    border: 1px solid;
+                    padding: 22px;
                     .circle-skill {
                         display: flex;
                         .circle {
@@ -243,16 +245,21 @@
                     flex-direction: row;
                     justify-content: center;
                     align-items: center;
-                    .single-name{
-                        font-family: Play;
-                        font-style: normal;
-                        font-weight: normal;
-                        font-size: 10px;
-                        line-height: 12px;
-                        color: white;
-                        border-radius: 30px;
-                        margin: 13px;
-                        padding: 9px;
+                    .single{
+                        border: 1px solid white;
+                        border-radius: 22px;
+                        margin-left: 6px;
+                        margin-right: 6px;
+                        .single-name{
+                            font-family: Play;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 12px;
+                            color: white;
+                            border-radius: 30px;
+                            margin: 13px;
+                        }
                     }
                 }
             }
