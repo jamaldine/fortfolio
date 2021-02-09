@@ -2,9 +2,19 @@ $(document).ready(function() {
     $(function() {
         $.getJSON('../data.json', function(data) {
             const schema1 = '<section class="home-skills">' +
+                '<div class="title-skills">' +
                 '<h2 class="skill-title">' + data.webIntegrator.name + '</h2>' +
+                '</div>' +
             '</section>';
-            $(schema1).appendTo(".home-right");
+            $(schema1).appendTo('.home-right');
+            if(data.webIntegrator.img) {
+                const imgSchema = '<div class="circle-skill">' +
+                    '<div class="circle">' +
+                        '<i class="' + data.webIntegrator.img + '"></i>' +
+                    '</div>' +
+                '</div>';
+                $(imgSchema).appendTo('.title-skills');
+            }
             $.each(data.webIntegrator.skills, function(k, skill) {
                 if (skill.type === "groupe-skills") {
                     $.each(skill.list, function(i, item) {
@@ -35,13 +45,13 @@ $(document).ready(function() {
                     });
                 }
                 else if (skill.type === 'single-skills') {
-                    const schema7 = '<div class="single-item"></div>';
+                    const schema7 = `<div class="single-item single-${k}"></div>`;
                     $(schema7).appendTo('.home-skills');
-                    $.each(skill.list, function(j, item) {
+                    $.each(skill.list, function (j, item) {
                         const schema6 = `<div class="single single-item-${j}"></div>`;
-                        $(schema6).appendTo('.single-item');
+                        $(schema6).appendTo(`.single-${k}`);
                         const schema4 = '<div class="single-name">' + item.name + '</div>';
-                        $(schema4).appendTo(`.single-item-${j}`);
+                        $(schema4).appendTo(`.single-${k} .single-item-${j}`);
                     });
                 }
             });

@@ -48,6 +48,7 @@
                     flex-wrap: wrap;
                     .skill-item{
                         margin-left: 30px;
+                        cursor: pointer;
                         .skill-item-name {
                             display: flex;
                             .circular-chart {
@@ -138,16 +139,30 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
-                .skill-title{
-                    
-                    font-family: cursive;
-                    font-style: normal;
-                    font-weight: bold;
-                    font-size: 18px;
-                    width: max-content;
-                    padding: 7px;
-                    letter-spacing: 8px;
-                    
+                .title-skills{
+                    display: flex;
+                    flex-direction: row;
+                    .circle-skill {
+                        display: flex;
+                        .circle {
+                            height: 90px;
+                            width: 90px;
+                            border-radius: 50%;
+                            border: 1px solid rgba(255, 255, 255, 0.4);
+                            position: relative;
+                            align-self: center;
+                            background-color: black;
+                        }
+                    }
+                    .skill-title{
+                        font-family: cursive;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 18px;
+                        width: max-content;
+                        padding: 7px;
+                        letter-spacing: 8px;
+                    }
                 }
                 .skills-list{
                     border-radius: 20px;

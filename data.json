@@ -88,6 +88,9 @@
                             },
                             {
                                 "name": "browsers"
+                            },
+                            {
+                                "name": "platforms"
                             }
                         ]
                     },
@@ -128,5 +131,166 @@
                 ]
             }
         ]
-    }      
+    },
+    "FrontEndDeveloper":
+    {
+        "name":"Front End Developer",
+        "img":"fa fa-react",
+        "skills": 
+        [
+            {
+                "type":"groupe-skills",
+                "list":[
+                    {
+                        "img":"",
+                        "name": "React",
+                        "percent": "100",
+                        "skillsItem":  [
+                            {
+                                "name": "CRA"
+                            },
+                            {
+                                "name": "NPM"
+                            },
+                            {
+                                "name":"YARN"
+                            },
+                            {
+                                "name":"BABEL"
+                            },
+                            {
+                                "name":"WebPACK"
+                            },
+                            {
+                                "name":"Eslint"
+                            },
+                            {
+                                "name":"Prettier"
+                            },
+                            {
+                                "name":"Jest"
+                            },
+                            {
+                                "name":"Enzyme"
+                            },
+                            {
+                                "name":"Istanbul.js"
+                            },
+                            {
+                                "name":"Appolo"
+                            },
+                            {
+                                "name":"GraphQL"
+                            },
+                            {
+                                "name":"Redux Form"
+                            },
+                            {
+                                "name":"Axios"
+                            },
+                            {
+                                "name":"Fetch"
+                            },
+                            {
+                                "name":"React Router"
+                            },
+                            {
+                                "name":"Redux"
+                            },
+                            {
+                                "name":"Redux saga"
+                            },
+                            {
+                                "name":"Hooks"
+                            },
+                            {
+                                "name":"Redux thunk"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type":"single-skills",
+                "list":[
+                    {
+                        "name": "MATERial UI"
+                    },
+                    {
+                        "name": "SKETCH"
+                    },
+                    {
+                        "name": "TDD BDD"
+                    },
+                    {
+                        "name": "ES6"
+                    },
+                    {
+                        "name": "TypeScript"
+                    },
+                    {
+                        "name": "Atomic design"
+                    },
+                    {
+                        "name": "i18n"
+                    }
+                ]
+            },
+            {
+                "type":"groupe-skills",
+                "list":[
+                    {
+                        "name": "React NATIVE",
+                        "percent": "100",
+                        "skillsItem":  [
+                            {
+                                "name": "Expo"
+                            },
+                            {
+                                "name": "react native cli"
+                            },
+                            {
+                                "name": "create react native app"
+                            },
+                            {
+                                "name": "android"
+                            },
+                            {
+                                "name": "IOS"
+                            },
+                            {
+                                "name": "App Store"
+                            },
+                            {
+                                "name": "Google Play"
+                            },
+                            {
+                                "name": "Hambrew"
+                            },
+                            {
+                                "name": "Watchman"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type":"single-skills",
+                "list":[
+                    {
+                        "name": "vscode"
+                    },
+                    {
+                        "name": "sublim text"
+                    },
+                    {
+                        "name": "xcode"
+                    },
+                    {
+                        "name": "Android Studio"
+                    }
+                ]
+            }
+        ]
+    }
 }

@@ -2,8 +2,8 @@ $(document).ready(function() {
     const navbarComponent = document.querySelector('.navbar-component');
     const nav = navbarComponent.querySelector('.nav');
     const navItem = nav.querySelectorAll('.nav-item');
-    var classList;
-    var active;
+    let classList;
+    let active;
     navItem.forEach((item)=>{
         item.querySelector('.nav-link').addEventListener('click',displayContent);
         classList = item.querySelector('.nav-link').className.split(/\s+/);
@@ -16,15 +16,15 @@ $(document).ready(function() {
 });
 
 function displayContent(){
-    var navItem = document.querySelector('.navbar-component').querySelector('.nav').querySelectorAll('.nav-item');
-    navItem.forEach((item)=>{
+    let navItem = document.querySelector('.navbar-component').querySelector('.nav').querySelectorAll('.nav-item');
+    navItem.forEach((item) => {
         item.querySelector('.nav-link ').classList.remove('active');
-    })
+    });
     this.classList.add('active');
     changeContent(this);
 }
 
-function changeContent(navlink){
+function changeContent(navlink) {
     if (navlink.classList.contains('home')) {
         $('#root').load('../common/home-section.html');
     }
@@ -36,12 +36,12 @@ function changeContent(navlink){
             medias.classList.remove('d-none');
             slickCarousel();
             control();
-        } ,50);
+        }, 50);
     }
     if (navlink.classList.contains('work')) {
         $('#root').load('../common/work-section.html');
     }
-    if (navlink.classList.contains('writing'))  {
+    if (navlink.classList.contains('writing')) {
         $('#root').load('../common/writing-section.html');
     }
     if (navlink.classList.contains('contact')) {
@@ -49,23 +49,22 @@ function changeContent(navlink){
     }
 }
 
-function slickCarousel(){
+function slickCarousel() {
     $('.medias-content').slick({
         slidesToShow: 3,
-        dots:true,
+        dots: true,
         centerMode: true,
     });
 }
 
-function control(){
+function control() {
     //change text of prev and next btn
-    var prev = document.querySelector('.slick-prev');
-    var next = document.querySelector('.slick-next');
+    const prev = document.querySelector('.slick-prev');
+    const next = document.querySelector('.slick-next');
 
-    prev.textContent="";
-    prev.innerHTML='<i class="fa fa-chevron-left"></i>';
+    prev.textContent = '';
+    prev.innerHTML = '<i class="fa fa-chevron-left"></i>';
 
-    next.textContent="";
-    next.innerHTML='<i class="fa fa-chevron-right"></i>';
-
+    next.textContent = '';
+    next.innerHTML = '<i class="fa fa-chevron-right"></i>';
 }
