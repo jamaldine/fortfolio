@@ -37,9 +37,11 @@
                 }
                 .my-name{
                     font-size: 1.3em;
+                    margin-left: 5px;
                 }
                 .who-am-i{
                     font-family: monospace;
+                    margin-left: 5px;
                 }
                 .skills{
                     list-style: none;
@@ -152,6 +154,14 @@
                             position: relative;
                             align-self: center;
                             background-color: black;
+                            .fa{
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%,-50%);
+                                font-size: 60px;
+                                color: white;
+                            }
                         }
                     }
                     .skill-title{
@@ -170,7 +180,7 @@
                     border-radius: 20px;
                     margin: 0 15px 0 15px;
                     border-color: white;
-                    border: 1px solid;
+                    //border: 1px solid;
                     padding: 22px;
                     .circle-skill {
                         display: flex;
@@ -206,9 +216,10 @@
                                 display: flex;
                                 flex-direction: row;
                                 margin-bottom: 10px;
+                                margin-left: 15px;
                                 .name {
                                     flex: 1;
-                                    font-family: Plaster;
+                                    font-family: 'Montserrat_Regular';
                                     font-style: normal;
                                     font-weight: normal;
                                     font-size: 18px;
@@ -218,6 +229,7 @@
                                 }
                                 .percent {
                                     flex: 1;
+                                    display: none;
                                 }
                             }
                             .breadcrumb {
@@ -226,7 +238,7 @@
                                 background-color: black;
                                 border-radius: 12px;
                                 margin: 0 15px 0 15px;
-                                border: 1px solid white;
+                                border: 1px solid #ffffff45;
                                 .breadcrumb-item {
                                     display: inline;
                                     font-family: Poppins;
@@ -234,7 +246,7 @@
                                     font-weight: normal;
                                     font-size: 19px;
                                     line-height: 13px;
-                                    color: #000000;
+                                    //color: #000000;
                                     &::after {
                                         padding: 8px;
                                         color: white;
@@ -244,6 +256,7 @@
                                         color: white;
                                         text-decoration: none;
                                         text-transform: lowercase;
+                                        font-family: monospace;
                                         
                                         &:hover {
                                             color: #01447e;
@@ -266,10 +279,10 @@
                         margin-left: 6px;
                         margin-right: 6px;
                         .single-name{
-                            font-family: Play;
+                            font-family: fantasy;
                             font-style: normal;
                             font-weight: normal;
-                            font-size: 14px;
+                            font-size: 16px;
                             line-height: 12px;
                             color: white;
                             border-radius: 30px;

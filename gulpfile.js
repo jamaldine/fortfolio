@@ -77,12 +77,6 @@ function navbarTask(){
 }
 
 
-
-function jsonTask(){
-  // to minify later
-  return src('js/json.js').pipe(gulp.dest('dist/js'));
-}
-
 function dataTask(){
   // to minify later
   return src('./data.json').pipe(gulp.dest('dist/'));
@@ -125,7 +119,6 @@ exports.jsTask = jsTask;
 exports.jqueryTask = jqueryTask;
 exports.slickTask = slickTask;
 exports.navbarTask = navbarTask;
-exports.jsonTask = jsonTask;
 exports.dataTask = dataTask;
 exports.particlesTask = particlesTask;
 exports.appTask = appTask;
@@ -135,7 +128,7 @@ exports.copyCommon = copyCommon;
 exports.copyFonts = copyFonts;
 
 
-gulp.task('serve', gulp.series(parallel(copyHtml, copyFonts, copyCommon, imgTask, jqueryTask, slickTask, navbarTask, jsonTask, dataTask, particlesTask, appTask, jsTask, cssTask, scssTask),  function () {
+gulp.task('serve', gulp.series(parallel(copyHtml, copyFonts, copyCommon, imgTask, jqueryTask, slickTask, navbarTask, dataTask, particlesTask, appTask, jsTask, cssTask, scssTask),  function () {
     // Static server & Autoreload
     plugins.browserSync.init({
         port: 3010,

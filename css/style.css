@@ -4,7 +4,7 @@ html,body{
   margin: 0;
   position: relative;
   font-family: 'Roboto_Regular';
-  background-color: #151515;
+  background-color: #000000c2;
 }
 /* ---- particles.js container ---- */
 #particles-js{
