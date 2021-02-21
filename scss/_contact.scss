@@ -2,108 +2,83 @@
   position: absolute;
   top: 120px;
   font-family: Univers_45;
-  background-color: #000010;
+  background-color: $dark_blue;
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  @include flex(column);
   .title {
-    font-size: 27px;
-    letter-spacing: -0.02em;
-    color: #fff;
-    align-self: center;
-    font-weight: 400;
+    @include txtContact();
   }
-  .contact-way{
-    font-size: 27px;
-    letter-spacing: -0.02em;
-    color: #fff;
-    align-self: center;
-    font-weight: 400;
+  .contact-way {
+    @include txtContact();
   }
-  .office{
-      display: flex;
-      flex-direction: row;
-      .office-img{
-          flex: 1;
-          width: 100%;
-        .office-programming{
-            width: 100%;
-            padding: 23px;
+  .office {
+    @include flex(row);
+    .office-img {
+      flex: 1;
+      width: 100%;
+      .office-programming {
+        width: 100%;
+        padding: 23px;
+        &:hover {
+          //width: 120%;
         }
       }
-      .office-desc{
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          color: #fff;
-          .office-desc-title{
-              margin-top: 60px;
-              font-weight: 700;
+    }
+    .office-desc {
+      flex: 1;
+      @include flex(column);
+      color: $white;
+      .office-desc-title {
+        @include txtStyleContact();
 
-              font-size: 1pc;
-              letter-spacing: 0;
-              line-height: 1.5;
-
-          }
-          .office-desc-paragraphe{
-            font-size: 1pc;
-            letter-spacing: 0;
-            line-height: 1.5;
-          }
-
+        margin-top: 60px;
+        font-weight: 700;
       }
+      .office-desc-paragraphe {
+        @include txtStyleContact();
+      }
+    }
   }
   .phone-email {
     height: 200px;
-    background-color: #fff;
-    display: flex;
-    display: flex;
-    flex-direction: row;
-
+    background-color: $white;
+    @include flex(row);
     .phone {
       @include contact();
       cursor: pointer;
-      &:hover{
+      &:hover {
         background-color: black;
         //So I change color of icon to white
-    }
+      }
       .phoneIcon {
-        font-size: 35px;
-        margin-bottom: 10px;
+        @include iconContact();
       }
       .phoneTxt {
-        font-size: 13px;
-        text-transform: uppercase;
+        @include iconTxt();
       }
     }
     .email {
       @include contact();
       cursor: pointer;
-      border-left: 1px solid #0000101c;
-      &:hover{
-          background-color: black;
-           //So I change color of icon to white
+      border-left: 1px solid $dark_blue;
+      &:hover {
+        background-color: black;
+        //So I change color of icon to white
       }
       .emailIcon {
-        font-size: 35px;
-        margin-bottom: 10px;
+        @include iconContact();
       }
       .emailTxt {
-        font-size: 13px;
-        text-transform: uppercase;
+        @include iconTxt();
       }
     }
   }
   .subTitle {
-    font-size: 27px;
-    letter-spacing: -0.02em;
-    color: #fff;
-    align-self: center;
-    font-weight: 400;
+    @include txtContact();
   }
   .fullname-number {
-    display: flex;
-    background-color: #fff;
+    @include flex(row);
+    background-color: $white;
     height: 100px;
     align-items: center;
     padding: 0 30px;
@@ -114,7 +89,7 @@
       height: 100%;
       align-items: center;
       justify-content: start;
-      display: flex;
+      @include flex(row);
     }
     .number {
       flex: 1;
@@ -122,7 +97,7 @@
       text-decoration: underline;
       align-items: center;
       justify-content: start;
-      display: flex;
+      @include flex(row);
       cursor: pointer;
       font-size: 14px;
       letter-spacing: 0;
@@ -131,104 +106,58 @@
     }
   }
   .formContact {
-    background-color: #fff;
+    background-color: $white;
     padding: 45px;
     .personalInfo {
-      font-size: 1pc;
-      margin-left: 10px;
-      color: #000;
+      @include txtStyleContact();
+      color: $black;
       text-transform: uppercase;
-      letter-spacing: 0;
-      line-height: 1.5;
-      margin-bottom: 30px;
-      margin-top: 30px;
+      margin: 30px 0 30px 10px;
     }
     .name {
-      display: flex;
+      @include flex(row);
       .InputName {
-        font-size: 14px;
-        width: calc(50% - 26px);
-        padding: 15px;
         height: 54px;
-        display: inline-block;
-        letter-spacing: 0;
-        line-height: 1.5;
-        border: none;
-        box-sizing: border-box;
-        border-radius: 2px;
-        background-color: #000010;
-        color: #fff;
+        @include inputContact();
       }
     }
     .contactInfo {
-      font-size: 1pc;
-      margin-left: 10px;
-      color: #000;
+      @include txtStyleContact();
+
+      color: $black;
       text-transform: uppercase;
-      letter-spacing: 0;
-      line-height: 1.5;
-      margin-bottom: 30px;
-      margin-top: 30px;
+      margin: 30px 0 30px 10px;
     }
     .emailDesc {
-      display: flex;
-      flex-direction: row;
+      @include flex(row);
       .email {
-        display: flex;
+        @include flex(row);
         flex: 1;
-
         .emailInput {
-          flex: 1;
-          background-color: #000010;
           height: 54px;
-          color: #fff;
-
-          font-size: 14px;
-          width: calc(50% - 26px);
-          padding: 15px;
-          display: inline-block;
-          letter-spacing: 0;
-          line-height: 1.5;
-          border: none;
-          box-sizing: border-box;
-          border-radius: 2px;
-
-          
+          flex: 1;
+          @include inputContact();
         }
       }
       .desc {
         flex: 1;
-        display: flex;
+        @include flex(row);
         .descArea {
           flex: 1;
-          background-color: #000010;
-          color: #fff;
-
-          font-size: 14px;
-          width: calc(50% - 26px);
-          padding: 15px;
-          display: inline-block;
-          letter-spacing: 0;
-          line-height: 1.5;
-          border: none;
-          box-sizing: border-box;
-          border-radius: 2px;
+          @include inputContact();
         }
       }
     }
     .submit-cta {
-      background-color: #000010;
+      background-color: $dark_blue;
       border: none;
       line-height: 2;
       font-size: 14px;
       border-radius: 2px;
-      color: #fff;
+      color: $white;
       padding: 0 30px;
-      font-family: Univers57, sans-serif;
       text-transform: uppercase;
-      margin-bottom: 30px;
-      margin-top: 15px;
-      margin-left: 26px;
+      margin: 15px 0 30px 26px;
       cursor: pointer;
     }
     .required-field {

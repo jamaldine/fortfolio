@@ -1,40 +1,82 @@
-// here we will create our responsive mixins / funnctions 
+// here we will create our responsive mixins / funnctions
 
 // mobile
-@mixin  responsive_mobile() {
-    @media only screen and (max-width: 767px) {
-        @content;
-    }
+@mixin responsive_mobile() {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
 }
 
 // tablet
-@mixin  responsive_tab() {
-    @media only screen and (min-width: 768px) and (max-width: 1024px) {
-        @content;
-    }
+@mixin responsive_tab() {
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    @content;
+  }
 }
 
 // variable
-@mixin  responsive ($min,$max) {
-    @media only screen and (min-width: $min) and (max-width: $max) {
-        @content;
-    }
+@mixin responsive($min, $max) {
+  @media only screen and (min-width: $min) and (max-width: $max) {
+    @content;
+  }
 }
 
 @mixin home_shadow() {
-    animation-name: shadow;
-    animation-duration: 500ms;
-    animation-timing-function: linear;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
+  animation-name: shadow;
+  animation-duration: 500ms;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
 
 @mixin contact() {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex($direction) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+@mixin txtContact() {
+  font-size: 27px;
+  letter-spacing: -0.02em;
+  color: #fff;
+  align-self: center;
+  font-weight: 400;
+}
+
+@mixin txtStyleContact() {
+  font-size: 1pc;
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+
+@mixin iconContact() {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+@mixin iconTxt() {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+@mixin inputContact() {
+  background-color: $dark_blue;
+  color: $white;
+  font-size: 14px;
+  width: calc(50% - 26px);
+  padding: 15px;
+  display: inline-block;
+  letter-spacing: 0;
+  line-height: 1.5;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 2px;
 }
