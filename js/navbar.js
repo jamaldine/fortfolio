@@ -124,8 +124,8 @@ function changeContent(navlink) {
   if (navlink.classList.contains("work")) {
     $("#root").load("../common/work-section.html");
   }
-  if (navlink.classList.contains("writing")) {
-    $("#root").load("../common/writing-section.html");
+  if (navlink.classList.contains("interests")) {
+    $("#root").load("../common/interests-section.html");
   }
   if (navlink.classList.contains("contact")) {
     $("#root").load("../common/contact-section.html");

@@ -1,10 +1,242 @@
-.contact-wrapper{
-    position: absolute;
-    top: 120px;
-    width: 100%;
-    color: #FFF;
-    /* background-image: url(../img/2.png); */
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: 30% 50%;
+.contact-wrapper {
+  position: absolute;
+  top: 120px;
+  font-family: Univers_45;
+  background-color: #000010;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  .title {
+    font-size: 27px;
+    letter-spacing: -0.02em;
+    color: #fff;
+    align-self: center;
+    font-weight: 400;
+  }
+  .contact-way{
+    font-size: 27px;
+    letter-spacing: -0.02em;
+    color: #fff;
+    align-self: center;
+    font-weight: 400;
+  }
+  .office{
+      display: flex;
+      flex-direction: row;
+      .office-img{
+          flex: 1;
+          width: 100%;
+        .office-programming{
+            width: 100%;
+            padding: 23px;
+        }
+      }
+      .office-desc{
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          color: #fff;
+          .office-desc-title{
+              margin-top: 60px;
+              font-weight: 700;
+
+              font-size: 1pc;
+              letter-spacing: 0;
+              line-height: 1.5;
+
+          }
+          .office-desc-paragraphe{
+            font-size: 1pc;
+            letter-spacing: 0;
+            line-height: 1.5;
+          }
+
+      }
+  }
+  .phone-email {
+    height: 200px;
+    background-color: #fff;
+    display: flex;
+    display: flex;
+    flex-direction: row;
+
+    .phone {
+      @include contact();
+      cursor: pointer;
+      &:hover{
+        background-color: black;
+        //So I change color of icon to white
+    }
+      .phoneIcon {
+        font-size: 35px;
+        margin-bottom: 10px;
+      }
+      .phoneTxt {
+        font-size: 13px;
+        text-transform: uppercase;
+      }
+    }
+    .email {
+      @include contact();
+      cursor: pointer;
+      border-left: 1px solid #0000101c;
+      &:hover{
+          background-color: black;
+           //So I change color of icon to white
+      }
+      .emailIcon {
+        font-size: 35px;
+        margin-bottom: 10px;
+      }
+      .emailTxt {
+        font-size: 13px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .subTitle {
+    font-size: 27px;
+    letter-spacing: -0.02em;
+    color: #fff;
+    align-self: center;
+    font-weight: 400;
+  }
+  .fullname-number {
+    display: flex;
+    background-color: #fff;
+    height: 100px;
+    align-items: center;
+    padding: 0 30px;
+    .fullname {
+      font-weight: 700;
+      flex: 1;
+      color: #333;
+      height: 100%;
+      align-items: center;
+      justify-content: start;
+      display: flex;
+    }
+    .number {
+      flex: 1;
+      color: #0c2340;
+      text-decoration: underline;
+      align-items: center;
+      justify-content: start;
+      display: flex;
+      cursor: pointer;
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 1.5;
+      height: 100%;
+    }
+  }
+  .formContact {
+    background-color: #fff;
+    padding: 45px;
+    .personalInfo {
+      font-size: 1pc;
+      margin-left: 10px;
+      color: #000;
+      text-transform: uppercase;
+      letter-spacing: 0;
+      line-height: 1.5;
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+    .name {
+      display: flex;
+      .InputName {
+        font-size: 14px;
+        width: calc(50% - 26px);
+        padding: 15px;
+        height: 54px;
+        display: inline-block;
+        letter-spacing: 0;
+        line-height: 1.5;
+        border: none;
+        box-sizing: border-box;
+        border-radius: 2px;
+        background-color: #000010;
+        color: #fff;
+      }
+    }
+    .contactInfo {
+      font-size: 1pc;
+      margin-left: 10px;
+      color: #000;
+      text-transform: uppercase;
+      letter-spacing: 0;
+      line-height: 1.5;
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+    .emailDesc {
+      display: flex;
+      flex-direction: row;
+      .email {
+        display: flex;
+        flex: 1;
+
+        .emailInput {
+          flex: 1;
+          background-color: #000010;
+          height: 54px;
+          color: #fff;
+
+          font-size: 14px;
+          width: calc(50% - 26px);
+          padding: 15px;
+          display: inline-block;
+          letter-spacing: 0;
+          line-height: 1.5;
+          border: none;
+          box-sizing: border-box;
+          border-radius: 2px;
+
+          
+        }
+      }
+      .desc {
+        flex: 1;
+        display: flex;
+        .descArea {
+          flex: 1;
+          background-color: #000010;
+          color: #fff;
+
+          font-size: 14px;
+          width: calc(50% - 26px);
+          padding: 15px;
+          display: inline-block;
+          letter-spacing: 0;
+          line-height: 1.5;
+          border: none;
+          box-sizing: border-box;
+          border-radius: 2px;
+        }
+      }
+    }
+    .submit-cta {
+      background-color: #000010;
+      border: none;
+      line-height: 2;
+      font-size: 14px;
+      border-radius: 2px;
+      color: #fff;
+      padding: 0 30px;
+      font-family: Univers57, sans-serif;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      margin-top: 15px;
+      margin-left: 26px;
+      cursor: pointer;
+    }
+    .required-field {
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 1.5;
+      color: #333;
+      margin-left: 26px;
+    }
+  }
 }
