@@ -6,17 +6,7 @@ html,body{
   font-family: 'Roboto_Regular';
   background-color: #000000c2;
 }
-/* ---- particles.js container ---- */
-#particles-js{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  background-image: url('../img/wave.svg');
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
+
 /* ---- navbar wraper ---- */
 .navbar_wraper{
   position: absolute;

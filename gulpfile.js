@@ -57,10 +57,6 @@ function imgTask(){
     return src('img/*').pipe(imagemin()).pipe(gulp.dest('dist/img'));
 }
 
-function particlesTask(){
-    // to minify later
-    return src('js/particles.js').pipe(gulp.dest('dist/js'));
-}
 
 function jqueryTask(){
   // to minify later
@@ -69,6 +65,11 @@ function jqueryTask(){
 function slickTask(){
   // to minify later
   return src('js/slick.min.js').pipe(gulp.dest('dist/js'));
+}
+
+function aosTask(){
+  // to minify later
+  return src('js/aos.js').pipe(gulp.dest('dist/js'));
 }
 
 function navbarTask(){
@@ -82,14 +83,12 @@ function dataTask(){
   return src('./data.json').pipe(gulp.dest('dist/'));
 }
 
-function appTask(){
-    return src('js/**/app.js')
-        .pipe(sourcemaps.init())
-        .pipe(concat('app.js'))
-        .pipe(terser())
-        .pipe(sourcemaps.write('.'))
-        .pipe(dest('dist/js'));
+function certificationsTask(){
+  // to minify later
+  return src('./certifications.json').pipe(gulp.dest('dist/'));
 }
+
+
 
 function jsTask(){
     return src(jsPath)
@@ -111,24 +110,24 @@ function cssTask(){
 
 
 function watchTask(){
-    watch([cssPath, jsPath], {interval: 1000}, parallel(cssTask, scssTask, slickTask, jqueryTask, particlesTask, appTask,jsTask, navbarTask, jsonTask, dataTask));
+    watch([cssPath, jsPath], {interval: 1000}, parallel(cssTask, scssTask,aosTask, slickTask, jqueryTask,jsTask, navbarTask, jsonTask, dataTask, certificationsTask));
 }
 exports.cssTask = cssTask;
 exports.scssTask = scssTask;
 exports.jsTask = jsTask;
 exports.jqueryTask = jqueryTask;
 exports.slickTask = slickTask;
+exports.aosTask = aosTask;
 exports.navbarTask = navbarTask;
 exports.dataTask = dataTask;
-exports.particlesTask = particlesTask;
-exports.appTask = appTask;
+exports.certificationsTask = certificationsTask;
 exports.imgTask = imgTask;
 exports.copyHtml = copyHtml;
 exports.copyCommon = copyCommon;
 exports.copyFonts = copyFonts;
 
 
-gulp.task('serve', gulp.series(parallel(copyHtml, copyFonts, copyCommon, imgTask, jqueryTask, slickTask, navbarTask, dataTask, particlesTask, appTask, jsTask, cssTask, scssTask),  function () {
+gulp.task('serve', gulp.series(parallel(copyHtml, copyFonts, copyCommon, imgTask, jqueryTask, aosTask, slickTask, navbarTask, dataTask, certificationsTask, jsTask, cssTask, scssTask),  function () {
     // Static server & Autoreload
     plugins.browserSync.init({
         port: 3010,

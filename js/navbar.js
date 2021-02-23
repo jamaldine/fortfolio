@@ -120,6 +120,12 @@ function changeContent(navlink) {
       slickCarousel();
       control();
     }, 50);
+
+    //here my new code
+    $.getJSON("../certifications.json", function (data) {
+      console.log("data==>", data.Certifications);
+      schemaCertifications(data);
+    });
   }
   if (navlink.classList.contains("work")) {
     $("#root").load("../common/work-section.html");
@@ -150,6 +156,25 @@ function control() {
 
   next.textContent = "";
   next.innerHTML = '<i class="fa fa-chevron-right"></i>';
+}
+
+function schemaCertifications(data) {
+  const schema1 =
+    '<div class="my-certifications">' +
+    "</div>";
+  $(schema1).appendTo(".certifications");
+
+  $.each(data.Certifications, function (i, certification) {
+    const schema2 =
+      `<div class='certification-item certification-item-${i}'>` +
+        `<div class='all-certifItem'>`+
+          `<div class='certification-name'>${certification.name}</div>` +
+          `<div class='image-certification'><img class='img-certification' src=${certification.image} alt=${certification.name} /></div>` +
+          `<div class='certification-link'><a class='certif-link' href=${certification.link}>See certification</a></div>` +
+        `</div>`+
+      `</div>`;
+    $(schema2).appendTo(".my-certifications");
+  });
 }
 
 function schemaSkills(data) {

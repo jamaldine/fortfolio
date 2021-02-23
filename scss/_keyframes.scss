@@ -14,3 +14,76 @@
     box-shadow: 0 -1px 0px 0px lightgrey;
   }
 }
+
+@keyframes titleContact {
+  100% {
+    color: $white;
+  }
+}
+
+@keyframes imageContact {
+  100% {
+    opacity: 0.2;
+  }
+}
+
+@keyframes imgAfterContact {
+  0% {
+    height: 0%;
+    opacity: 0;
+    content: "HERE IS MY SETUP";
+  }
+  50% {
+    height: 50%;
+    opacity: 0.5;
+    content: "HERE IS MY SETUP";
+  }
+  100% {
+    height: 100%;
+    opacity: 1;
+    content: "HERE IS MY SETUP";
+  }
+}
+@keyframes imgContact {
+  0% {
+    height: 100%;
+    opacity: 1;
+  }
+  50% {
+    height: 50%;
+    opacity: 0.5;
+  }
+  100% {
+    height: 0%;
+    opacity: 0;
+  }
+}
+
+@keyframes descTitleContact {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes descParagContact {
+  0% {
+    opacity: 1;
+    height: 0;
+  }
+  100% {
+    opacity: 0;
+    height: 100%;
+  }
+}
+
+@keyframes wayContact {
+  0% {
+    font-size: 0;
+  }
+  100% {
+    font-size: 27px;
+  }
+}
