@@ -18,63 +18,78 @@
     {
       "name": "Prenez en main Bootstrap",
       "link": "https://openclassrooms.com/fr/course-certificates/1842289378",
-      "image":"../img/bootstrap.png"
+      "image":"../img/bootstrap.jpg"
     },
     {
       "name": "Optimisez votre déploiement en créant des conteneurs avec Docker",
-      "link": "https://openclassrooms.com/fr/course-certificates/5805044168"
+      "link": "https://openclassrooms.com/fr/course-certificates/5805044168",
+      "image":"../img/docker.jpg"
     },
     {
       "name": "Développez des sites web avec Java EE",
-      "link": "https://openclassrooms.com/fr/course-certificates/5379297220"
+      "link": "https://openclassrooms.com/fr/course-certificates/5379297220",
+      "image":"../img/jee.png"
     },
     {
       "name": "Créez votre premier site avec WordPress",
-      "link": "https://openclassrooms.com/fr/course-certificates/2927159488"
+      "link": "https://openclassrooms.com/fr/course-certificates/2927159488",
+      "image":"../img/wordpress.png"
     },
     {
       "name": "Apprenez à coder avec Javascript",
-      "link": "https://openclassrooms.com/fr/course-certificates/3537935185"
+      "link": "https://openclassrooms.com/fr/course-certificates/3537935185",
+      "image":"../img/javascript.png"
     },
     {
       "name": "Découverez les solutions CMS",
-      "link": "https://openclassrooms.com/fr/course-certificates/1015484549"
+      "link": "https://openclassrooms.com/fr/course-certificates/1015484549",
+      "image":"../img/cms.jpeg"
     },
     {
       "name": "Introduction à Jquery",
-      "link": "https://openclassrooms.com/fr/course-certificates/6627985050"
+      "link": "https://openclassrooms.com/fr/course-certificates/6627985050",
+      "image":"../img/jquery.png"
     },
     {
       "name": "Développez des applications Web avec Angular",
-      "link": "https://openclassrooms.com/fr/course-certificates/8989789267"
+      "link": "https://openclassrooms.com/fr/course-certificates/8989789267",
+      "image":"../img/angular.png"
     },
     {
       "name": "Adoptez une architecture MVC en PHP",
-      "link": "https://openclassrooms.com/fr/course-certificates/7006210993"
+      "link": "https://openclassrooms.com/fr/course-certificates/7006210993",
+      "image":"../img/mvc.png"
     },
     {
       "name": "Dévenez parrain et développez vos compétences transverses",
-      "link": "https://openclassrooms.com/fr/course-certificates/2515898776"
+      "link": "https://openclassrooms.com/fr/course-certificates/2515898776",
+      "image":"../img/competences.png"
     },
     {
       "name": "Ecrivez du Javascript pour le web",
-      "link": "https://openclassrooms.com/fr/course-certificates/7454517131"
+      "link": "https://openclassrooms.com/fr/course-certificates/7454517131",
+      "image":"../img/javascriptWeb.png"
     },
     {
       "name": "Découverez la méthodologie Devops",
-      "link": "https://openclassrooms.com/fr/course-certificates/7975033373"
+      "link": "https://openclassrooms.com/fr/course-certificates/7975033373",
+      "image":"../img/devops.jpeg"
     },
     {
       "name": "Apprenez à créer votre site web avec HTML5 et CSS3",
-      "link": "https://openclassrooms.com/fr/course-certificates/3388217017"
+      "link": "https://openclassrooms.com/fr/course-certificates/3388217017",
+      "image":"../img/htmlCss.jpeg"
+
     },
     {
       "name": "Comprendre le Bitcoin et la blockchain",
-      "link": "https://openclassrooms.com/fr/course-certificates/3760312476"
+      "link": "https://openclassrooms.com/fr/course-certificates/3760312476",
+      "image":"../img/blockchain.jpeg"
     },
     {
       "name": "Organisez votre application avec la logique Redux",
-      "link": "https://openclassrooms.com/fr/course-certificates/6444758112"
+      "link": "https://openclassrooms.com/fr/course-certificates/6444758112",
+      "image":"../img/redux.png"
     }
   ]
 }

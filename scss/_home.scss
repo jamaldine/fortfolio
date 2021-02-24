@@ -19,7 +19,7 @@
             background-image: url("../img/15-21.jpg");
             background-repeat: no-repeat;
             background-size: cover;
-            background-position: 100% 30%;
+            background-position: 100% 20%;
             position: relative;
             box-shadow: inset 0px 700px 0px 0px rgba(0, 0, 0 , 0.2);
             .all{
@@ -175,6 +175,7 @@
                         width: max-content;
                         padding: 7px;
                         letter-spacing: 8px;
+                        font-family: 'Neo Sans Pro Regular'
                     }
                 }
                 .skills-list{
@@ -238,7 +239,7 @@
                             .breadcrumb {
                                 padding: 10px 16px;
                                 list-style: none;
-                                background-color: black;
+                                //background-color: black;
                                 border-radius: 12px;
                                 margin: 0 15px 0 15px;
                                 border: 1px solid #ffffff45;

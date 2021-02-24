@@ -170,7 +170,7 @@ function schemaCertifications(data) {
         `<div class='all-certifItem'>`+
           `<div class='certification-name'>${certification.name}</div>` +
           `<div class='image-certification'><img class='img-certification' src=${certification.image} alt=${certification.name} /></div>` +
-          `<div class='certification-link'><a class='certif-link' href=${certification.link}>See certification</a></div>` +
+          `<div class='certification-link'><a target='_blank' class='certif-link' href=${certification.link}>See certification</a></div>` +
         `</div>`+
       `</div>`;
     $(schema2).appendTo(".my-certifications");

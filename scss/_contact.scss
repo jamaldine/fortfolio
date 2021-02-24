@@ -119,9 +119,10 @@
     @include flex(row);
     .phone {
       @include contact();
-      cursor: pointer;
+
       &:hover {
-        background-color: $black;
+        //background-color: $black;
+        background-color: $dark_blue;
       }
       &:hover .phoneIcon {
         color: $white;
@@ -139,11 +140,12 @@
     }
     .email {
       @include contact();
-      cursor: pointer;
       border-left: 1px solid $dark_blue;
 
       &:hover {
-        background-color: $black;
+        //background-color: $black;
+        background-color: $dark_blue;
+
       }
       &:hover .emailIcon {
         color: $white;
@@ -197,7 +199,8 @@
     padding: 45px;
     .personalInfo {
       @include txtStyleContact();
-      color: $black;
+      //color: $black;
+      color: $dark_blue;
       text-transform: uppercase;
       margin: 30px 0 30px 10px;
     }
@@ -211,7 +214,8 @@
     .contactInfo {
       @include txtStyleContact();
 
-      color: $black;
+      //color: $black;
+      color: $dark_blue;
       text-transform: uppercase;
       margin: 30px 0 30px 10px;
     }

@@ -136,7 +136,7 @@
     "FrontEndDeveloper":
     {
         "name":"Front End Developer",
-        "img":"fa fa-html5",
+        "img":"fa fa-code",
         "skills": 
         [
             {
@@ -379,7 +379,7 @@
                 "type":"groupe-skills",
                 "list":[
                     {
-                        "img":"fa fa-html5",
+                        "img":"fa fa-server",
                         "name": "Node.js",
                         "percent": "100",
                         "skillsItem":  [
@@ -449,7 +449,7 @@
                 "type":"groupe-skills",
                 "list":[
                     {
-                        "img":"fa fa-html5",
+                        "img":"fa fa-camera",
                         "name": "Docker",
                         "percent": "100",
                         "skillsItem":  [
@@ -470,7 +470,7 @@
                 "type":"groupe-skills",
                 "list":[
                     {
-                        "img":"fa fa-html5",
+                        "img":"fa fa-cloud-upload",
                         "name": "Deploy",
                         "percent": "100",
                         "skillsItem":  [
@@ -497,7 +497,7 @@
                 "type":"groupe-skills",
                 "list":[
                     {
-                        "img":"fa fa-html5",
+                        "img":"fa fa-github",
                         "name": "Git",
                         "percent": "100",
                         "skillsItem":  [
