@@ -1,48 +1,91 @@
-
-
-.interests-wrapper{
+.interests-wrapper {
   @include afterHeader();
-    /* swiper */
-    .swiper-container {
-      width: 100%;
-      height: 100%;
-      background: #000;
-    }
+  /* swiper */
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+    background: #000;
+  }
 
-    .swiper-slide {
-      font-size: 18px;
-      color: #fff;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      padding: 40px 60px;
-    }
+  .swiper-slide {
+    font-size: 18px;
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px 60px;
+  }
 
-    .parallax-bg {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 130%;
-      height: 100%;
-      -webkit-background-size: cover;
-      background-size: cover;
-      background-position: center;
-    }
+  .parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+  }
 
-    .swiper-slide .title {
-      font-size: 41px;
-      font-weight: 300;
-      text-transform: uppercase;
-    }
+  .swiper-slide .title {
+    font-size: 41px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
 
-    .swiper-slide .subtitle {
-      font-size: 21px;
-    }
+  .swiper-slide .subtitle {
+    font-size: 21px;
+  }
 
-    .swiper-slide .text {
+  .swiper-slide .text {
+    font-size: 14px;
+    max-width: 400px;
+    line-height: 1.3;
+  }
+  /* end swiper */
+
+  .responsabilities {
+    margin: 20px 5px;
+    .title {
+      color: white;
+      margin: 0;
+    }
+    .subtitle {
+      color: white;
+      margin: 0 3px;
       font-size: 14px;
-      max-width: 400px;
-      line-height: 1.3;
+      letter-spacing: 2px;
     }
-/* end swiper */
-    
+    .commitments {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 50px 0;
+      .webApp,
+      .mobileApp {
+        border: 1px solid;
+        border-radius: 4px;
+        width: 400px;
+        .title {
+          background-color: white;
+          color: #000010;
+          text-align: center;
+          padding: 18px;
+        }
+        .what-we-do {
+          color: white;
+          display: flex;
+          flex-direction: column;
+          .doing {
+            font-size: 17px;
+            margin: 12px;
+            padding: 7px;
+            letter-spacing: 1px;
+            &::marker {
+              all: initial;
+            }
+          }
+        }
+      }
+    }
+  }
 }
