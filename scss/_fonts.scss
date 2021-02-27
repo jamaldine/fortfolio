@@ -121,3 +121,10 @@
     font-weight: normal;
     src: local('Neo Sans Pro Ultra Italic'), url('../fonts/neo-sans-pro-cufonfonts-webfont/NeoSansProUltIt.woff') format('woff');
     }
+
+    @font-face {
+        font-family: 'FuturaLT-Book';
+        font-style: normal;
+        font-weight: normal;
+        src: url('../fonts/FuturaLT-Book/FuturaLT-Book.ttf') format('truetype');
+        }

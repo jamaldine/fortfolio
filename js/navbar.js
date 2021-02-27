@@ -123,12 +123,12 @@ function changeContent(navlink) {
 
     //here my new code
     $.getJSON("../certifications.json", function (data) {
-      console.log("data==>", data.Certifications);
       schemaCertifications(data);
     });
   }
   if (navlink.classList.contains("work")) {
     $("#root").load("../common/work-section.html");
+    
   }
   if (navlink.classList.contains("interests")) {
     $("#root").load("../common/interests-section.html");

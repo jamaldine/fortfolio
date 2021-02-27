@@ -1,9 +1,6 @@
 /* ---- index section ---- */
 .home-wrapper{
-    position: absolute;
-    top: 120px;
-    width: 100%;
-    color: #FFF;
+    @include afterHeader();
     height: 83%;
     .home-section{
         height: 100%;

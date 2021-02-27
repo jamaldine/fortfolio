@@ -1,8 +1,5 @@
 .about-wrapper {
-  position: absolute;
-  top: 120px;
-  width: 100%;
-  color: #fff;
+  @include afterHeader();
   display: flex;
   flex-direction: column;
   .about {
@@ -169,12 +166,13 @@
           align-items: center;
           .certif-link {
             color: $white;
-            font-size: 12px;
-            letter-spacing: -0.02em;
             line-height: 1.5;
             text-decoration: none;
             text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-            font-family: 'Neo Sans Pro Black Italic';
+            font-family: FuturaLT-Book;
+            font-size: 10px;
+            letter-spacing: 1px;
+            font-variant: all-petite-caps;
           }
         }
       }

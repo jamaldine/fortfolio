@@ -1,10 +1,8 @@
 .contact-wrapper {
-  position: absolute;
-  top: 120px;
+  @include afterHeader();
   font-family: Univers_45;
   background-color: $dark_blue;
   color: $dark_blue;
-  width: 100%;
   @include flex(column);
   .title {
     @include txtContact();
@@ -77,11 +75,10 @@
         @include txtStyleContact();
         margin-top: 60px;
         font-weight: 700;
-
+        color: white;
         width: 0%;
         height: 1.5em;
         overflow: hidden;
-
         animation-name: descTitleContact;
         animation-duration: 500ms;
         animation-timing-function: linear;

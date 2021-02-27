@@ -1,10 +1,92 @@
 <div class="interests-wrapper">
-    THIS IS interests'S SECTION
-
-    BlockChain
-    Smart contract
 
 
-    <p>THREE.JS</p>
-    
+
+
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="parallax-bg" style="background-image:url(../img/blockchain.jpg)" data-swiper-parallax="-23%"></div>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="title" data-swiper-parallax="-300">BlockChain</div>
+        <div class="subtitle" data-swiper-parallax="-200"></div>
+        <div class="text" data-swiper-parallax="-100">
+          <p class="blockchain">
+              <div>I'm interested to the blockchain development.</div>
+              <div>Blockchain is the future, the secure network never been.</div>
+              <div>Blockchain is for all sectors and fields.</div>
+              <div>You can create your new system with Blockchain</div>
+              <div>Apps based on Blockchain are powerfull arent allowed to be pirated or updated by anyone</div>
+              <div>The development is based on oriented object patters that allow to create a real life in a secure context.</div>            
+            </p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="title" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">SOLIDITY</div>
+        <div class="subtitle" data-swiper-parallax="-200"></div>
+        <div class="text" data-swiper-parallax="-100">
+          <p class="solidity">Solidity is an object-oriented, high-level language for
+            implementing smart contracts. Smart contracts are programs which govern the
+            behaviour of accounts within the Ethereum state.</p>
+        </div>
+      </div>
+
+     
+
+    <div class="swiper-slide">
+        <div class="title" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">Web3j</div>
+        <div class="subtitle" data-swiper-parallax="-200"></div>
+        <div class="text" data-swiper-parallax="-100">
+          <p class="Web3j"> Web3j is a highly modular, reactive, type safe Java and Android library for
+            working with Smart Contracts and integrating with clients (nodes) on the
+            Ethereum network:
+            This allows you to work with the Ethereum blockchain, without the additional
+            overhead of having to write your own integration code for the platform. The
+            Java and the Blockchain talk provides an overview of blockchain, Ethereum
+            and web3j.</p>
+        </div>
+      </div>
+
+
+      <div class="swiper-slide">
+        <div class="title" data-swiper-parallax="-300">Smart contract</div>
+        <div class="subtitle" data-swiper-parallax="-200"></div>
+        <div class="text" data-swiper-parallax="-100">
+          <p class="smartContract">A "smart contract" is simply a program that runs on the
+            Ethereum blockchain. It's a collection of code (its functions) and data (its
+            state) that resides at a specific address on the Ethereum blockchain. Smart
+            contracts are a type of Ethereum account. This means they have a balance and
+            they can send transactions over the network. However they're not controlled
+            by a user, instead they are deployed to the network and run as programmed.
+            User accounts can then interact with a smart contract by submitting
+            transactions that execute a function defined on the smart contract. Smart
+            contracts can define rules, like a regular contract, and automatically
+            enforce them via the code.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination swiper-pagination-white"></div>
+    <!-- Add Navigation -->
+    <div class="swiper-button-prev swiper-button-white"></div>
+    <div class="swiper-button-next swiper-button-white"></div>
+  </div>
+
 </div>
+
+
+     <!-- Initialize Swiper -->
+     <script>
+        var swiper = new Swiper('.swiper-container', {
+          speed: 600,
+          parallax: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      </script>

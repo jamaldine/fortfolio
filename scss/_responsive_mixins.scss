@@ -82,3 +82,10 @@
   box-sizing: border-box;
   border-radius: 2px;
 }
+@mixin afterHeader() {
+  position: absolute;
+  top: 120px;
+  width: 100%;
+  color: #fff;
+  background-color: #000010;
+}
