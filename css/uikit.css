@@ -3526,7 +3526,10 @@ select.uk-form-width-xsmall {
   font-size: 1.25rem;
   line-height: 1.4;
   color: #333;
+  color: white;
   overflow: hidden;
+  border: 3px solid;
+  padding: 30px;
 }
 .uk-accordion-title::before {
   content: "";
@@ -3545,6 +3548,7 @@ select.uk-form-width-xsmall {
 .uk-accordion-title:hover,
 .uk-accordion-title:focus {
   color: #666;
+  color: rgb(188, 174, 174);
   text-decoration: none;
   outline: none;
 }
@@ -11339,6 +11343,7 @@ iframe.uk-cover {
 .uk-offcanvas-bar .uk-accordion-title:hover,
 .uk-offcanvas-bar .uk-accordion-title:focus {
   color: rgba(255, 255, 255, 0.7);
+  color: yellow;
 }
 .uk-light .uk-grid-divider > :not(.uk-first-column)::before,
 .uk-section-primary:not(.uk-preserve-color) .uk-grid-divider > :not(.uk-first-column)::before,

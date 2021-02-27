@@ -160,8 +160,14 @@ function control() {
 
 function schemaCertifications(data) {
   const schema1 =
+  `<div class='certitficationItems'>`+
+    `<div class='certification-title'>`+
+      `<div class='enplus'>And also ...</div>`+
+      `<div class='enplusTitle'>My certificates in different technologies</div>`+
+    `</div>` +
     '<div class="my-certifications">' +
-    "</div>";
+    "</div>"+
+  `</div>`;
   $(schema1).appendTo(".certifications");
 
   $.each(data.Certifications, function (i, certification) {

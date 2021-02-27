@@ -8,6 +8,10 @@
         border: 3px solid;
         padding: 30px;
         text-transform: uppercase;
+        color: white;
+        &::before {
+          background-color: white;
+        }
       }
       .uk-accordion-content {
         .bytel .jacozzi .lacaisse.ma .cap .smile {
@@ -17,10 +21,25 @@
           flex-direction: row;
           justify-content: space-around;
           align-items: center;
-          .technologies{
+          .technologies {
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            line-height: 44px;
           }
-          .desc{
-
+          .desc {
+            font-size: 22px;
+            letter-spacing: 2px;
+            line-height: 51px;
+            font-style: oblique;
+            font-variant: small-caps;
+            li {
+              position: relative;
+              &::marker {
+                all: initial;
+              }
+              
+            }
           }
         }
       }
