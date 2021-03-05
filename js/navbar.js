@@ -163,7 +163,7 @@ function schemaCertifications(data) {
   `<div class='certitficationItems'>`+
     `<div class='certification-title'>`+
       `<div class='enplus'>And also ...</div>`+
-      `<div class='enplusTitle'>My certificates in different technologies</div>`+
+      `<div class='enplusTitle'>My certificates in different technology</div>`+
     `</div>` +
     '<div class="my-certifications">' +
     "</div>"+

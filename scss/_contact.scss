@@ -6,9 +6,12 @@
   @include flex(column);
   .title {
     @include txtContact();
+    color: #12A5FD !important;
+    text-transform: uppercase;
     animation: titleContact 2s linear forwards;
   }
   .contact-way {
+    display: none;
     @include txtContact();
     color: $white;
 
@@ -112,14 +115,16 @@
   }
   .phone-email {
     height: 200px;
-    background-color: $white;
+    //background-color: $white;
     @include flex(row);
+    align-items: center;
+    justify-content: space-evenly;
     .phone {
       @include contact();
-
+      //background: white;
       &:hover {
-        //background-color: $black;
-        background-color: $dark_blue;
+        background-color: $black;
+        //background-color: white;
       }
       &:hover .phoneIcon {
         color: $white;
@@ -128,7 +133,6 @@
         color: $white;
       }
       .phoneIcon {
-        color: $black;
         @include iconContact();
       }
       .phoneTxt {
@@ -137,11 +141,12 @@
     }
     .email {
       @include contact();
-      border-left: 1px solid $dark_blue;
+      //background: white;
+      //border-left: 1px solid $dark_blue;
 
       &:hover {
-        //background-color: $black;
-        background-color: $dark_blue;
+        background-color: $black;
+        //background-color: $dark_blue;
 
       }
       &:hover .emailIcon {

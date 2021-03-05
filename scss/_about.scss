@@ -39,7 +39,7 @@
             font-style: normal;
             font-weight: 600;
             text-transform: uppercase;
-            text-shadow: 4px 4px 5px #d6d6d6;
+            //text-shadow: 4px 4px 5px #d6d6d6;
             line-height: 1.6;
             word-spacing: 4px;
           }
@@ -145,16 +145,17 @@
           font-weight: 600;
           line-height: 1.4;
           text-transform: uppercase;
-          color: white;
-          font-size: 16px;
+          color: #0c08bb;
+          font-size: 29px;
           margin: 2.4rem;
           text-align: center;
         }
         .enplusTitle {
-          font-weight: 600;
-          line-height: 1.1;
-          color: white;
-          font-size: 48px;
+          color: #0084ec;
+          font-size: 49px;
+          text-transform: uppercase;
+          font-weight: 700;
+          line-height: 1.5em;
         }
       }
       .my-certifications {
@@ -189,14 +190,16 @@
             display: flex;
             align-items: center;
             .certif-link {
-              color: $white;
               line-height: 1.5;
               text-decoration: none;
               text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
               font-family: FuturaLT-Book;
-              font-size: 10px;
+              font-size: 14px;
               letter-spacing: 1px;
               font-variant: all-petite-caps;
+              :hover{
+                color:#4d4cc1;
+              }
             }
           }
         }
