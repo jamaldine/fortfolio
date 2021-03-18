@@ -1,10 +1,55 @@
-.work-wrapper{
-    position: absolute;
-    top: 120px;
-    width: 100%;
-    color: #FFF;
-    /* background-image: url(../img/2.png); */
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: 30% 50%;
+
+.work-wrapper {
+  @include afterHeader();
+  font-family: "FuturaLT-Book";
+  .task-sup{
+    margin: 60px;
+    ul{
+      list-style-type: none;
+    }
+  }
+  .work-list {
+    margin: 60px;
+    .uk-open {
+      .uk-accordion-title {
+        border: 3px solid;
+        padding: 30px;
+        text-transform: uppercase;
+        color: white;
+        &::before {
+          background-color: white;
+        }
+      }
+      .uk-accordion-content {
+        .bytel .jacozzi .lacaisse.ma .cap .smile {
+        }
+        .activities {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+          .technologies {
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            line-height: 44px;
+          }
+          .desc {
+            font-size: 22px;
+            letter-spacing: 2px;
+            line-height: 51px;
+            font-style: oblique;
+            font-variant: small-caps;
+            li {
+              position: relative;
+              &::marker {
+                all: initial;
+              }
+              
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,0 +1,530 @@
+{
+    "webIntegrator":
+    {
+        "name":"Web integrator",
+        "img":"",
+        "skills": 
+        [
+            {
+                "type":"groupe-skills",
+                "list":[
+                    {
+                        "img":"fa fa-jsfiddle",
+                        "name": "JAVASCRIPT",
+                        "percent": "100",
+                        "skillsItem":  [
+                            {
+                                "name": "GOOGLE MAPS API V3"
+                            },
+                            {
+                                "name": "JQUERY"
+                            },
+                            {
+                                "name":"AJAX"
+                            },
+                            {
+                                "name":"particles.js"
+                            },
+                            {
+                                "name":"chart.js"
+                            },
+                            {
+                                "name":"require.js"
+                            },
+                            {
+                                "name":"knockout.js"
+                            },
+                            {
+                                "name":"quagga.js"
+                            },
+                            {
+                                "name":"fullpage.js"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type":"single-skills",
+                "list":[
+                    {
+                        "name": "BOOTSTRAP"
+                    },
+                    {
+                        "name": "gulp"
+                    },
+                    {
+                        "name": "WordPress"
+                    },
+                    {
+                        "name": "Slick"
+                    },
+                    {
+                        "name": "icons"
+                    }
+                ]
+            },
+            {
+                "type":"groupe-skills",
+                "list":[
+                    {
+                        "img":"fa fa-html5",
+                        "name": "HTML 5",
+                        "percent": "100",
+                        "skillsItem":  [
+                            {
+                                "name": "HTML structure"
+                            },
+                            {
+                                "name": "Twig"
+                            },
+                            {
+                                "name": "json"
+                            },
+                            {
+                                "name": "xml"
+                            },
+                            {
+                                "name": "Debugging extensions"
+                            },
+                            {
+                                "name": "browsers"
+                            },
+                            {
+                                "name": "platforms"
+                            }
+                        ]
+                    },
+                    {
+                        "img":"fa fa-css3",
+                        "name": "CSS 3",
+                        "percent": "100",
+                        "skillsItem":  [
+                            {
+                                "name": "FLEXBOX"
+                            },
+                            {
+                                "name": "CSS GRID"
+                            },
+                            {
+                                "name": "Responsive Design"
+                            },
+                            {
+                                "name": "Medias Querries"
+                            },
+                            {
+                                "name": "Animations"
+                            },
+                            {
+                                "name": "Pixel Perfect"
+                            },
+                            {
+                                "name": "Fonts"
+                            },
+                            {
+                                "name": "SVG"
+                            },
+                            {
+                                "name": "CSS preprocessors SASS"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "FrontEndDeveloper":
+    {
+        "name":"Front End Developer",
+        "img":"fa fa-code",
+        "skills": 
+        [
+            {
+                "type":"groupe-skills",
+                "list":[
+                    {
+                        "img":"",
+                        "name": "React",
+                        "percent": "100",
+                        "skillsItem":  [
+                            {
+                                "name": "CRA"
+                            },
+                            {
+                                "name": "NPM"
+                            },
+                            {
+                                "name":"YARN"
+                            },
+                            {
+                                "name":"BABEL"
+                            },
+                            {
+                                "name":"WebPACK"
+                            },
+                            {
+                                "name":"Eslint"
+                            },
+                            {
+                                "name":"Prettier"
+                            },
+                            {
+                                "name":"Jest"
+                            },
+                            {
+                                "name":"Enzyme"
+                            },
+                            {
+                                "name":"Istanbul.js"
+                            },
+                            {
+                                "name":"Appolo"
+                            },
+                            {
+                                "name":"GraphQL"
+                            },
+                            {
+                                "name":"Redux Form"
+                            },
+                            {
+                                "name":"Axios"
+                            },
+                            {
+                                "name":"Fetch"
+                            },
+                            {
+                                "name":"React Router"
+                            },
+                            {
+                                "name":"Redux"
+                            },
+                            {
+                                "name":"Redux saga"
+                            },
+                            {
+                                "name":"Hooks"
+                            },
+                            {
+                                "name":"Redux thunk"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type":"single-skills",
+                "list":[
+                    {
+                        "name": "MATERial UI"
+                    },
+                    {
+                        "name": "SKETCH"
+                    },
+                    {
+                        "name": "TDD BDD"
+                    },
+                    {
+                        "name": "ES6"
+                    },
+                    {
+                        "name": "TypeScript"
+                    },
+                    {
+                        "name": "Atomic design"
+                    },
+                    {
+                        "name": "i18n"
+                    }
+                ]
+            },
+            {
+                "type":"groupe-skills",
+                "list":[
+                    {
+                        "img":"",
+                        "name": "React NATIVE",
+                        "percent": "100",
+                        "skillsItem":  [
+                            {
+                                "name": "Expo"
+                            },
+                            {
+                                "name": "react native cli"
+                            },
+                            {
+                                "name": "create react native app"
+                            },
+                            {
+                                "name": "android"
+                            },
+                            {
+                                "name": "IOS"
+                            },
+                            {
+                                "name": "App Store"
+                            },
+                            {
+                                "name": "Google Play"
+                            },
+                            {
+                                "name": "Hambrew"
+                            },
+                            {
+                                "name": "Watchman"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type":"single-skills",
+                "list":[
+                    {
+                        "name": "vscode"
+                    },
+                    {
+                        "name": "sublim text"
+                    },
+                    {
+                        "name": "xcode"
+                    },
+                    {
+                        "name": "Android Studio"
+                    }
+                ]
+            }
+        ]
+    },"UIDesigner":
+    {
+        "name":"UI Designer",
+        "img":"",
+        "skills": 
+        [
+            {
+                "type":"groupe-skills",
+                "list":[
+                    {
+                        "img":"",
+                        "name": "Figma",
+                        "percent": "100",
+                        "skillsItem":  [
+                        ]
+                    }
+                ]
+            },{
+                "type":"groupe-skills",
+                "list":[
+                    {
+                        "img":"",
+                        "name": "Sketch",
+                        "percent": "100",
+                        "skillsItem":  [
+                        ]
+                    }
+                ]
+            },
+            {
+                "type":"groupe-skills",
+                "list":[
+                    {
+                        "img":"",
+                        "name": "Invision",
+                        "percent": "100",
+                        "skillsItem":  [
+                        ]
+                    }
+                ]
+            },
+            {
+                "type":"groupe-skills",
+                "list":[
+                    {
+                        "img":"",
+                        "name": "Adobe XD",
+                        "percent": "100",
+                        "skillsItem":  [
+                        ]
+                    }
+                ]
+            },
+            {
+                "type":"single-skills",
+                "list":[
+                    {
+                        "name": "Animation & UI"
+                    },
+                    {
+                        "name": "Photo content in UI"
+                    },
+                    {
+                        "name": "Work with fonts"
+                    },
+                    {
+                        "name": "Light Dark UI"
+                    },
+                    {
+                        "name": "Unified Pictogram Style"
+                    }
+                ]
+            }
+        ]
+    },
+    "BackEndDeveloper":
+    {
+        "name":"Back End Developer",
+        "img":"",
+        "skills": 
+        [
+            {
+                "type":"groupe-skills",
+                "list":[
+                    {
+                        "img":"fa fa-server",
+                        "name": "Node.js",
+                        "percent": "100",
+                        "skillsItem":  [
+                            {
+                                "name": "Express.js"
+                            },
+                            {
+                                "name": "Middleware"
+                            },
+                            {
+                                "name":"Rest API"
+                            },
+                            {
+                                "name":"SQL"
+                            },
+                            {
+                                "name":"JSON SERVER"
+                            },
+                            {
+                                "name":"JSON WEB TOKEN"
+                            },
+                            {
+                                "name":"MOCK API"
+                            },
+                            {
+                                "name":"NEDB"
+                            },
+                            {
+                                "name":"Socket.io"
+                            },
+                            {
+                                "name":"Postman"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type":"single-skills",
+                "list":[
+                    {
+                        "name": "JEE"
+                    },
+                    {
+                        "name": "PHP & MYSQL"
+                    },
+                    {
+                        "name": "C#"
+                    },
+                    {
+                        "name": "MVC"
+                    },
+                    {
+                        "name": "SOLID"
+                    }
+                ]
+            }
+        ]
+    },
+    "Devops":
+    {
+        "name":"Devops",
+        "img":"",
+        "skills": 
+        [
+            {
+                "type":"groupe-skills",
+                "list":[
+                    {
+                        "img":"fa fa-camera",
+                        "name": "Docker",
+                        "percent": "100",
+                        "skillsItem":  [
+                            {
+                                "name": "Dockerfile"
+                            },
+                            {
+                                "name": "Docker Hub"
+                            },
+                            {
+                                "name":"Docker compose"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type":"groupe-skills",
+                "list":[
+                    {
+                        "img":"fa fa-cloud-upload",
+                        "name": "Deploy",
+                        "percent": "100",
+                        "skillsItem":  [
+                            {
+                                "name": "Nginx"
+                            },
+                            {
+                                "name": "Heroku"
+                            },
+                            {
+                                "name":"Parcel"
+                            },
+                            {
+                                "name": "Github pages"
+                            },
+                            {
+                                "name":"Netlify"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type":"groupe-skills",
+                "list":[
+                    {
+                        "img":"fa fa-github",
+                        "name": "Git",
+                        "percent": "100",
+                        "skillsItem":  [
+                            {
+                                "name": "Github"
+                            },
+                            {
+                                "name": "GitLab"
+                            },
+                            {
+                                "name":"GitBucket"
+                            },
+                            {
+                                "name": "AzureDevops"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type":"single-skills",
+                "list":[
+                    {
+                        "name": "EC2"
+                    }
+                ]
+            }
+        ]
+    }
+}

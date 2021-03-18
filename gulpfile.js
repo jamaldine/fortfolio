@@ -40,7 +40,7 @@ function copyHtml(){
 }
 
 function copyCommon(){
-  return src('common/*.html').pipe(gulp.dest('dist/common'));
+  return src('common/**/*.html').pipe(gulp.dest('dist/common'));
 }
 
 function copyFonts(){
@@ -57,18 +57,40 @@ function imgTask(){
     return src('img/*').pipe(imagemin()).pipe(gulp.dest('dist/img'));
 }
 
-function particlesTask(){
-    // to minify later
-    return src('js/particles.js').pipe(gulp.dest('dist/js'));
-}
 
 function jqueryTask(){
   // to minify later
   return src('js/jquery.js').pipe(gulp.dest('dist/js'));
 }
+
+function uikitIconsTask(){
+  // to minify later
+  return src('js/uikit-icons.js').pipe(gulp.dest('dist/js'));
+}
+
+function uikitTask(){
+  // to minify later
+  return src('js/uikit.js').pipe(gulp.dest('dist/js'));
+}
+
+function swiperjsTask(){
+  // to minify later
+  return src('js/swiper-bundle.js').pipe(gulp.dest('dist/js'));
+}
+
+function threeTask(){
+  // to minify later
+  return src('js/three.js').pipe(gulp.dest('dist/js'));
+}
+
 function slickTask(){
   // to minify later
   return src('js/slick.min.js').pipe(gulp.dest('dist/js'));
+}
+
+function aosTask(){
+  // to minify later
+  return src('js/aos.js').pipe(gulp.dest('dist/js'));
 }
 
 function navbarTask(){
@@ -76,14 +98,22 @@ function navbarTask(){
   return src('js/navbar.js').pipe(gulp.dest('dist/js'));
 }
 
-function appTask(){
-    return src('js/**/app.js')
-        .pipe(sourcemaps.init())
-        .pipe(concat('app.js'))
-        .pipe(terser())
-        .pipe(sourcemaps.write('.'))
-        .pipe(dest('dist/js'));
+function workAnimationTask(){
+  // to minify later
+  return src('js/workAnimation.js').pipe(gulp.dest('dist/js'));
 }
+
+function dataTask(){
+  // to minify later
+  return src('./data.json').pipe(gulp.dest('dist/'));
+}
+
+function certificationsTask(){
+  // to minify later
+  return src('./certifications.json').pipe(gulp.dest('dist/'));
+}
+
+
 
 function jsTask(){
     return src(jsPath)
@@ -105,23 +135,29 @@ function cssTask(){
 
 
 function watchTask(){
-    watch([cssPath, jsPath], {interval: 1000}, parallel(cssTask, scssTask, slickTask, jqueryTask, particlesTask, appTask,jsTask, navbarTask));
+    watch([cssPath, jsPath], {interval: 1000}, parallel(cssTask, scssTask,aosTask, slickTask, jqueryTask, uikitTask, uikitIconsTask, swiperjsTask, threeTask, jsTask, navbarTask, workAnimationTask, jsonTask, dataTask, certificationsTask));
 }
 exports.cssTask = cssTask;
 exports.scssTask = scssTask;
 exports.jsTask = jsTask;
 exports.jqueryTask = jqueryTask;
+exports.uikitTask = uikitTask;
+exports.uikitIconsTask = uikitIconsTask;
+exports.swiperjsTask = swiperjsTask;
+exports.threeTask=threeTask;
 exports.slickTask = slickTask;
+exports.aosTask = aosTask;
 exports.navbarTask = navbarTask;
-exports.particlesTask = particlesTask;
-exports.appTask = appTask;
+exports.workAnimationTask = workAnimationTask;
+exports.dataTask = dataTask;
+exports.certificationsTask = certificationsTask;
 exports.imgTask = imgTask;
 exports.copyHtml = copyHtml;
 exports.copyCommon = copyCommon;
 exports.copyFonts = copyFonts;
 
 
-gulp.task('serve', gulp.series(parallel(copyHtml, copyFonts, copyCommon, imgTask, jqueryTask, slickTask, navbarTask, particlesTask, appTask, jsTask, cssTask, scssTask),  function () {
+gulp.task('serve', gulp.series(parallel(copyHtml, copyFonts, copyCommon, imgTask, jqueryTask, uikitTask, uikitIconsTask, swiperjsTask, threeTask, aosTask, slickTask, navbarTask, workAnimationTask, dataTask, certificationsTask, jsTask, cssTask, scssTask),  function () {
     // Static server & Autoreload
     plugins.browserSync.init({
         port: 3010,
