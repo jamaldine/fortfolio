@@ -1,6 +1,13 @@
+
 .work-wrapper {
   @include afterHeader();
   font-family: "FuturaLT-Book";
+  .task-sup{
+    margin: 60px;
+    ul{
+      list-style-type: none;
+    }
+  }
   .work-list {
     margin: 60px;
     .uk-open {
