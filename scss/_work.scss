@@ -10,6 +10,9 @@
   }
   .work-list {
     margin: 60px;
+    @media only screen and (max-width: 425px) {
+      margin: 0;
+    }
     .uk-open {
       .uk-accordion-title {
         border: 3px solid;
@@ -28,6 +31,9 @@
           flex-direction: row;
           justify-content: space-around;
           align-items: center;
+          @media only screen and (max-width: 425px) {
+            flex-direction: column;
+          }
           .technologies {
             font-size: 24px;
             text-transform: uppercase;

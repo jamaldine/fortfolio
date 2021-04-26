@@ -14,7 +14,7 @@
                         "percent": "100",
                         "skillsItem":  [
                             {
-                                "name": "GOOGLE MAPS API V3"
+                                "name": "GOOGLE MAPS API"
                             },
                             {
                                 "name": "JQUERY"
@@ -125,7 +125,7 @@
                                 "name": "SVG"
                             },
                             {
-                                "name": "CSS preprocessors SASS"
+                                "name": "SASS"
                             }
                         ]
                     }

@@ -1,11 +1,14 @@
 $(document).ready(function () {
   const navbarComponent = document.querySelector(".navbar-component");
-  const nav = navbarComponent.querySelector(".nav");
-  const navItem = nav.querySelectorAll(".nav-item");
   let classList;
   let active;
-  navItem.forEach((item) => {
-    item.querySelector(".nav-link").addEventListener("click", displayContent);
+  //nav-menu
+  const navMenu = navbarComponent.querySelector(".nav-menu");
+  const navItemMenu = navMenu.querySelectorAll(".nav-item");
+  navItemMenu.forEach((item) => {
+    item
+      .querySelector(".nav-link")
+      .addEventListener("click", displayContentPhone);
     classList = item.querySelector(".nav-link").className.split(/\s+/);
     for (var i = 0; i < classList.length; i++) {
       if (classList[i] == "active") {
@@ -13,21 +16,41 @@ $(document).ready(function () {
       }
     }
   });
+  //nav loaded
+  let bars = document.querySelector(".bars");
+  bars.addEventListener("click", displayMenu);
 });
 
-function displayContent() {
+function displayMenu() {
+  let logo = document.querySelector(".logo");
+  let bars = document.querySelector(".bars");
+  let first = document.querySelector(".first");
+  let second = document.querySelector(".second");
+  let third = document.querySelector(".third");
+  let navMenu = document.querySelector(".nav-menu");
+  logo.classList.toggle("logo-animation");
+  bars.classList.toggle("right");
+  first.classList.toggle("first-animation");
+  second.classList.toggle("second-animation");
+  third.classList.toggle("d-none");
+  navMenu.classList.toggle("d-none");
+}
+
+function displayContentPhone() {
   let navItem = document
     .querySelector(".navbar-component")
-    .querySelector(".nav")
+    .querySelector(".nav-menu")
     .querySelectorAll(".nav-item");
   navItem.forEach((item) => {
     item.querySelector(".nav-link ").classList.remove("active");
   });
+  console.log("this", this);
   this.classList.add("active");
   changeContent(this);
 }
 
 function changeContent(navlink) {
+  displayMenu();
   if (navlink.classList.contains("home")) {
     $("#root").load("../common/home-section.html");
 
@@ -128,7 +151,6 @@ function changeContent(navlink) {
   }
   if (navlink.classList.contains("work")) {
     $("#root").load("../common/work-section.html");
-    
   }
   if (navlink.classList.contains("interests")) {
     $("#root").load("../common/interests-section.html");
@@ -160,24 +182,24 @@ function control() {
 
 function schemaCertifications(data) {
   const schema1 =
-  `<div class='certitficationItems'>`+
-    `<div class='certification-title'>`+
-      `<div class='enplus'>And also ...</div>`+
-      `<div class='enplusTitle'>My certificates in different technology</div>`+
+    `<div class='certitficationItems'>` +
+    `<div class='certification-title'>` +
+    `<div class='enplus'>And also ...</div>` +
+    `<div class='enplusTitle'>My certificates in different technology</div>` +
     `</div>` +
     '<div class="my-certifications">' +
-    "</div>"+
-  `</div>`;
+    "</div>" +
+    `</div>`;
   $(schema1).appendTo(".certifications");
 
   $.each(data.Certifications, function (i, certification) {
     const schema2 =
       `<div class='certification-item certification-item-${i}'>` +
-        `<div class='all-certifItem'>`+
-          `<div class='certification-name'>${certification.name}</div>` +
-          `<div class='image-certification'><img class='img-certification' src=${certification.image} alt=${certification.name} /></div>` +
-          `<div class='certification-link'><a target='_blank' class='certif-link' href=${certification.link}>See certification</a></div>` +
-        `</div>`+
+      `<div class='all-certifItem'>` +
+      `<div class='certification-name'>${certification.name}</div>` +
+      `<div class='image-certification'><img class='img-certification' src=${certification.image} alt=${certification.name} /></div>` +
+      `<div class='certification-link'><a target='_blank' class='certif-link' href=${certification.link}>See certification</a></div>` +
+      `</div>` +
       `</div>`;
     $(schema2).appendTo(".my-certifications");
   });
@@ -226,9 +248,6 @@ function schemaSkills(data) {
               '<div class="name">' +
               item.name +
               "</div>" +
-              '<div class="percent">' +
-              item.percent +
-              "</div>" +
               "</div>" +
               "</div>" +
               "</div>";
@@ -239,9 +258,6 @@ function schemaSkills(data) {
               '<div class="name-percent">' +
               '<div class="name">' +
               item.name +
-              "</div>" +
-              '<div class="percent">' +
-              item.percent +
               "</div>" +
               "</div>" +
               "</div>" +
@@ -261,9 +277,6 @@ function schemaSkills(data) {
               '<div class="name">' +
               item.name +
               "</div>" +
-              '<div class="percent">' +
-              item.percent +
-              "</div>" +
               "</div>" +
               '<ul class="breadcrumb breadcrumb-' +
               l +
@@ -278,9 +291,6 @@ function schemaSkills(data) {
               '<div class="name-percent">' +
               '<div class="name">' +
               item.name +
-              "</div>" +
-              '<div class="percent">' +
-              item.percent +
               "</div>" +
               "</div>" +
               '<ul class="breadcrumb breadcrumb-' +

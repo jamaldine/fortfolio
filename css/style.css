@@ -12,6 +12,9 @@ body {
   margin: 0;
   padding: 0;
 }
+#root{
+  height: 100%;
+}
 /* ---- navbar wraper ---- */
 .navbar_wraper {
   position: absolute;
@@ -30,4 +33,11 @@ body {
   background-position: top;
   background-repeat: no-repeat;
   background-size: 30% 50%;
+}
+
+.d-none{
+  display: none !important;
+}
+.right{
+  right: 0;
 }

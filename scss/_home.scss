@@ -1,7 +1,7 @@
 /* ---- index section ---- */
 .home-wrapper {
   @include afterHeader();
-  height: 83%;
+  //height: 83%;
   .home-section {
     height: 100%;
     @extend .roboto_regular_base;
@@ -9,15 +9,19 @@
     position: relative;
     display: flex;
     flex-direction: row;
+    @media only screen and (max-width: 425px) {
+      flex-direction: column-reverse;
+    }
     .home-left {
-      height: 100%;
-      flex: 1;
+      //height: 100%;
+      //flex: 1;
       width: 100%;
       background-image: url("../img/15-21.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: 100% 20%;
       position: relative;
+      height: 400px;
       //box-shadow: inset 0px 700px 0px 0px rgba(0, 0, 0 , 0.2);
       .all {
         position: absolute;
@@ -32,6 +36,7 @@
           background-color: white;
           opacity: 0.3;
         }
+
         .my-name {
           color: aliceblue;
           font-size: 1.3em;
@@ -49,6 +54,9 @@
           display: flex;
           flex-wrap: wrap;
           text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+          @media only screen and (max-width: 425px) {
+            flex-direction: column;
+          }
           .skill-item {
             margin-left: 30px;
             cursor: pointer;
@@ -135,6 +143,7 @@
       &:hover {
         @include home_shadow();
       }
+
       /* skills */
       .home-skills {
         height: 100%;
@@ -156,6 +165,9 @@
               position: relative;
               align-self: center;
               background-color: black;
+              @media only screen and (max-width: 425px) {
+                align-self: flex-start;
+              }
               .fa {
                 position: absolute;
                 top: 50%;
@@ -163,6 +175,10 @@
                 transform: translate(-50%, -50%);
                 font-size: 60px;
                 color: blue;
+                @media only screen and (max-width: 425px) {
+                  top: 15px;
+                  left: 0;
+                }
               }
             }
           }
@@ -197,6 +213,10 @@
               position: relative;
               align-self: center;
               background-color: black;
+              @media only screen and (max-width: 425px) {
+                align-self: flex-start;
+                margin-right: 12px;
+              }
               .circle-img {
                 position: absolute;
                 height: 100%;
@@ -210,6 +230,10 @@
                 transform: translate(-50%, -50%);
                 font-size: 60px;
                 color: white;
+                @media only screen and (max-width: 425px) {
+                  top: 30px;
+                  left: 0;
+                }
               }
             }
             .skill {
@@ -222,6 +246,9 @@
                 flex-direction: row;
                 margin-bottom: 10px;
                 margin-left: 15px;
+                @media only screen and (max-width: 425px) {
+                  display: none;
+                }
                 .name {
                   flex: 1;
                   font-family: "Montserrat_Regular";
@@ -229,7 +256,7 @@
                   font-weight: normal;
                   font-size: 18px;
                   line-height: 22px;
-                  color: #4ea9ea;;
+                  color: #4ea9ea;
                 }
                 .percent {
                   flex: 1;
@@ -253,11 +280,11 @@
                   font-size: 19px;
                   line-height: 13px;
                   padding: 10px;
-                  &::after {
+                  /*&::before {
                     padding: 8px;
                     color: white;
                     content: "-";
-                  }
+                  }*/
                   .breadcrumb-name {
                     color: white;
                     text-decoration: none;

@@ -11,6 +11,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      @media only screen and (max-width: 425px) {
+        display: none;
+      }
       .img-portfolio {
         width: 100%;
         height: 100%;
@@ -30,6 +33,9 @@
       position: relative;
       .about-container {
         margin: 0 70px;
+        @media only screen and (max-width: 425px) {
+          margin: 0;
+        }
         .about-paragraphe {
           margin-top: 15px;
           margin-bottom: 15px;
@@ -74,6 +80,9 @@
         position: absolute;
         top: -15px;
         left: 50%;
+        @media only screen and (max-width: 425px) {
+          top: -45px;
+        }
       }
     }
   }
@@ -156,6 +165,9 @@
           text-transform: uppercase;
           font-weight: 700;
           line-height: 1.5em;
+          @media only screen and (max-width: 425px) {
+            text-align: center;
+          }
         }
       }
       .my-certifications {
@@ -170,6 +182,9 @@
           margin-top: 70px;
           margin-bottom: 70px;
           position: relative;
+          @media only screen and (max-width: 425px) {
+            margin-bottom: 0;
+          }
           .image-certification {
             .img-certification {
               width: 100%;
@@ -182,6 +197,9 @@
             line-height: 1.5;
             margin-bottom: 15px;
             font-family: "Neo Sans Pro Medium";
+            @media only screen and (max-width: 425px) {
+              font-size: 10px;
+            }
           }
           .certification-link {
             padding: 12px;
@@ -197,8 +215,11 @@
               font-size: 14px;
               letter-spacing: 1px;
               font-variant: all-petite-caps;
-              :hover{
-                color:#4d4cc1;
+              @media only screen and (max-width: 425px) {
+                font-size: 7px;
+              }
+              :hover {
+                color: #4d4cc1;
               }
             }
           }

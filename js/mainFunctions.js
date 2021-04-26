@@ -124,9 +124,6 @@ function schemaSkills(data) {
                 '<div class="name">' +
                 item.name +
                 "</div>" +
-                '<div class="percent">' +
-                item.percent +
-                "</div>" +
                 "</div>" +
                 "</div>" +
                 "</div>";
@@ -137,9 +134,6 @@ function schemaSkills(data) {
                 '<div class="name-percent">' +
                 '<div class="name">' +
                 item.name +
-                "</div>" +
-                '<div class="percent">' +
-                item.percent +
                 "</div>" +
                 "</div>" +
                 "</div>" +
@@ -159,9 +153,6 @@ function schemaSkills(data) {
                 '<div class="name">' +
                 item.name +
                 "</div>" +
-                '<div class="percent">' +
-                item.percent +
-                "</div>" +
                 "</div>" +
                 '<ul class="breadcrumb breadcrumb-' +
                 l +
@@ -176,9 +167,6 @@ function schemaSkills(data) {
                 '<div class="name-percent">' +
                 '<div class="name">' +
                 item.name +
-                "</div>" +
-                '<div class="percent">' +
-                item.percent +
                 "</div>" +
                 "</div>" +
                 '<ul class="breadcrumb breadcrumb-' +
